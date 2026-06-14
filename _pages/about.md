@@ -2,7 +2,7 @@
 layout: page
 title: About — Johar Singh
 permalink: /about/
-description: A nerd with a sixth-sense for instructional design. I help organizations design training that makes a measurable difference for professionals and the people they serve.
+meta_description: A nerd with a sixth-sense for instructional design. I help organizations design training that makes a measurable difference for professionals and the people they serve.
 ---
 
 > "I'm just a nerd with a sixth-sense for instructional design."
