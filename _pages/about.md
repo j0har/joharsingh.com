@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About — Johar Singh
+title: About
+meta_title: About — Johar Singh
 permalink: /about/
 meta_description: A nerd with a sixth-sense for instructional design. I help organizations design training that makes a measurable difference for professionals and the people they serve.
 ---
