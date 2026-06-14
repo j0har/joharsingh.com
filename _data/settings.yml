@@ -40,7 +40,7 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero_title: Designing outcome-oriented learning solutions and simulations.
+  hero_title: Designing outcome-oriented learning solutions.
   hero_description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
   hero_image: "/images/hero.jpg"
   hero_button_contact: Get in Touch
@@ -78,7 +78,7 @@ mailchimp_settings:
 
 #-------------------------------
 # Footer Settings
-footer_description: I'm just a nerd with a sixth-sense for Instructional Design. My mission is to help organizations design training that makes a measurable difference for professionals and the people they serve.
+footer_description: I’m just a nerd with a sixth-sense for Instructional Design. I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
 
 
 #-------------------------------
