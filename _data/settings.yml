@@ -1,15 +1,15 @@
 #-------------------------------
 # Site Settings
-title: Simpler
-logo: "/images/logo.svg" # You can add own logo. For example "/images/logo.svg".
+title: Johar Singh
+logo: "/images/logo.svg"
 logo_dark: "/images/logo-dark.svg"
-description: Simpler – A modern portfolio theme for Jekyll.
-color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the users can choose the light or dark mode themself.
+description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
+color_scheme: auto
 
 
 #-------------------------------
 # Author Settings
-author_name: Aaron Simons
+author_name: Johar Singh
 
 
 #-------------------------------
@@ -20,98 +20,65 @@ menu_settings:
       url: "/"
     - title: "About"
       url: "/about/"
-    - title: "Blog"
-      url: "/blog/"
+    - title: "Services"
+      url: "/services/"
     - title: "Projects"
       url: "/projects/"
-    - title: "Pages"
-      submenu:
-      - url: "/contact/"
-        title: "Contact"
-      - url: "/elements/"
-        title: "Elements"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "Contact"
+      url: "/contact/"
 
 
 #-------------------------------
 # Social Settings
 social:
-- {icon: "fa-brands fa-twitter", link: "https://twitter.com"}
-- {icon: "fa-brands fa-facebook", link: "https://facebook.com"}
-- {icon: "fa-brands fa-pinterest", link: "https://pinterest.com"}
-
-# Example of adding a new link to the header and footer - {icon: "fa-brands fa-youtube", link: "https://youtube.com"}
-# Other icons can be found at https://fontawesome.com/icons
+- {icon: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/joharsingh/"}
 
 
 #-------------------------------
 # Hero Settings
 hero:
   enable: true
-  hero_title: Aaron Simons. Building Digital <span><i>Products & Brands</i></span> # Add the "span" tag to highlight text.
-  hero_description: I’m Aaron, a creative Illustrator & Art Director based in San Francisco. I seek to push the limits of creativity to create high-engaging and memorable interactive experiences.
-  hero_image: "/images/01.jpg"
-  hero_button_contact: Get In Touch
+  hero_title: Designing outcome-oriented learning solutions and simulations.
+  hero_description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
+  hero_image: "/images/hero.jpg"
+  hero_button_contact: Get in Touch
   hero_button_about: About Me
 
 
 #-------------------------------
 # Projects Settings
-section_projects_title: 👨🏻‍💻 Selected Works
+section_projects_title: Selected Work
 
 
 #-------------------------------
 # Testimonials Section
-section_testimonial_title: 🙂 What Clients Say
-
-testimonial_items:
-  - name: "Carla Kenter"
-    image: "/images/client-1.jpg"
-    designation: "Professional Artist"
-    link: "https://twitter.com/"
-    content : "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus"
-
-  - name: "Kierra Botosh"
-    image: "/images/client-2.jpg"
-    designation: "Growth & Community"
-    link: "https://facebook.com/"
-    content : "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus"
-
-  - name: "Randy Herwitz"
-    image: "/images/client-3.jpg"
-    designation: "Executive Assistant"
-    link: "https://twitter.com/"
-    content : "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus"
-
-  - name: "Hanna Franci"
-    image: "/images/client-4.jpg"
-    designation: "Product Designer"
-    link: "https://twitter.com/"
-    content : "Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus"
+# Disabled at launch — no testimonials yet
+section_testimonials:
+  enable: false
 
 
 #-------------------------------
 # Blog Section
-section_blog_title: 📚 Read Latest Posts
+section_blog_title: Read Latest Posts
+
+
 #-------------------------------
-
-
 # Tags Section
-section_tags_title: ✌️ Explore Topics
+section_tags_title: Explore Topics
 
 
 #-------------------------------
 # Newsletter Settings
+# Wire to Kit (ConvertKit) at launch
 mailchimp_settings:
-  enable: true
-  mailchimp_title: Get interesting news
-  mailchimp_identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
-  mailchimp_input_text: Enter your email address
-  mailchimp_background_image: /images/subscribe-bg.jpg
+  enable: false
 
 
 #-------------------------------
 # Footer Settings
-footer_description: I’m Aaron, a creative Illustrator & Art Director based in San Francisco. I seek to push the limits of creativity to create high-engaging and memorable interactive experiences.
+footer_description: I'm just a nerd with a sixth-sense for Instructional Design. My mission is to help organizations design training that makes a measurable difference for professionals and the people they serve.
 
 
 #-------------------------------
@@ -122,31 +89,31 @@ footer_menu_settings:
       url: "/"
     - title: "About"
       url: "/about/"
+    - title: "Services"
+      url: "/services/"
     - title: "Projects"
       url: "/projects/"
-    - url: "/blog/"
-      title: "Blog"
-    - url: "/contact/"
-      title: "Contact"
-    - url: "/elements/"
-      title: "Elements"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "Contact"
+      url: "/contact/"
 
 
 #-------------------------------
 # Contact Settings
+# Wire to Formspree at launch
 contact:
-  email: your@email.com # Add your form_id
-  description: Simpler comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want. # Add a description of your form
-
-# NOTE
-# Simpler theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+  email: ""
+  description: If you want to team up on your next project, shoot me a message to get started. Tell me a bit about your goals, timeline, and any specific challenges you want to address.
 
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus_identifier: anvodstudio-demo # Add your shortname for Disqus Comment. For example anvodstudio-demo
+# Not in use
+disqus_identifier:
 
 
 #-------------------------------
 # Google Analytics
-google_analytics: # Add your GA Tracking Id
+# Add GA4 tracking ID at launch
+google_analytics:
