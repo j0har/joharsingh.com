@@ -1,31 +1,32 @@
 ---
 layout: page
-title: About
+title: About — Johar Singh
 permalink: /about/
-image: '/images/01-1.jpg'
+description: A nerd with a sixth-sense for instructional design. I help organizations design training that makes a measurable difference for professionals and the people they serve.
 ---
 
-Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.
+> "I'm just a nerd with a sixth-sense for instructional design."
 
-Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.
+I help organizations design training that makes a measurable difference for professionals and the people they serve.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/example-3.jpg" loading="lazy" alt="Project">
-    <img src="/images/example-4.jpg" loading="lazy" alt="Project">
-  </div>
-  <em>Gallery / <a href="https://www.freepik.com/" target="_blank">Freepic</a></em>
-</div>
+To learn more about working with me, check out my [Services](/services) page.
 
-Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue proin sodales eget ante.
+---
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+### Background
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa.
+I'm a full-stack L&D professional with over a decade of experience managing the development of professional training in the occupational health and safety, healthcare, and social services sectors.
 
-![Sea]({{site.baseurl}}/images/16.jpg)
-*Photo by [Freepik](https://www.freepik.com/)*
+I've produced digital and instructor-led training products for regulated activities in construction, transportation, pharmaceutical, and child welfare environments.
 
-Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas augue.
+I have a BSc in Psychology and a MA in Curriculum Studies and Teacher Development. I'm also a Certified Training and Development Professional (CTDP) and Project Management Professional (PMP).
 
-Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui.
+To learn more about my professional background, check out my [LinkedIn](https://www.linkedin.com/in/joharsingh/).
+
+---
+
+### Personal Life
+
+When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, watching hockey, or catching up on my gaming backlog.
+
+I live in the wine-growing region of Niagara with my spouse (who is also an instructional designer) and a sweet, sassy, squirrel-chasing West Highland White Terrier named Selkie (#SelkieTheWestie).
