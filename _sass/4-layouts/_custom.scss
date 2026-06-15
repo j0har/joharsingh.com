@@ -1,0 +1,37 @@
+// Custom brand overrides
+// Links in page and post content
+
+.page__content,
+.post__content {
+  a {
+    color: var(--heading-font-color);
+    text-decoration: underline;
+    text-decoration-color: #B8722A;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    font-weight: inherit;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+
+    &:hover {
+      color: #B8722A;
+      text-decoration-color: #B8722A;
+    }
+  }
+}
+
+// Page header: center title and description on archive/listing pages
+.page-head {
+  text-align: center;
+
+  .page-title {
+    margin-bottom: 16px;
+  }
+
+  .page-description {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-alt-color);
+  }
+}

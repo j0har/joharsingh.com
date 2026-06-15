@@ -6,6 +6,7 @@ client: Portfolio
 tools: Custom Web App
 date: 2026-06-14
 image: '/images/project-sepsis-alert.jpg'
+published: false
 ---
 
 Coming soon.
