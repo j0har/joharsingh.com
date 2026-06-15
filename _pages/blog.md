@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Blog
-description: This is where I nerd out about the practical applications of learning science and interactive design.
 meta_title: Blog — Johar Singh
 permalink: /blog/
-meta_description: Where I nerd out about the practical applications of learning science and interactive design.
+meta_description: Thoughts on evidence-based learning design, instructional craft, and the practice of building training that actually works.
+image: /images/benchlands-hero.webp
 ---
