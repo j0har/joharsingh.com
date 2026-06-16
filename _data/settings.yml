@@ -49,19 +49,18 @@ hero:
 
 #-------------------------------
 # Projects Settings
-section_projects_title: Selected Work
+section_projects_title: Projects
 
 
 #-------------------------------
 # Testimonials Section
-# Disabled at launch — no testimonials yet
 section_testimonials:
   enable: false
 
 
 #-------------------------------
 # Blog Section
-section_blog_title: Read Latest Posts
+section_blog_title: Blog Posts
 
 
 #-------------------------------
@@ -71,7 +70,6 @@ section_tags_title: Explore Topics
 
 #-------------------------------
 # Newsletter Settings
-# Wire to Kit (ConvertKit) at launch
 mailchimp_settings:
   enable: false
 
@@ -101,7 +99,6 @@ footer_menu_settings:
 
 #-------------------------------
 # Contact Settings
-# Wire to Formspree at launch
 contact:
   email: ""
   description: If you want to team up on your next project, shoot me a message to get started. Tell me a bit about your goals, timeline, and any specific challenges you want to address.
@@ -109,11 +106,9 @@ contact:
 
 #-------------------------------
 # Comment Section (Disqus)
-# Not in use
 disqus_identifier:
 
 
 #-------------------------------
 # Google Analytics
-# Add GA4 tracking ID at launch
 google_analytics:
