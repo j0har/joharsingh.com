@@ -100,4 +100,14 @@ I offer strategic services that target your training challenges and support bett
     <p class="service-receive">You receive a calibrated training product and an evaluation framework for tracking its success.</p>
   </div>
 
-  <div
+  <div class="service-card">
+    <div class="service-icon">
+      <!-- icon: business-deal-handshake.svg -->
+    </div>
+    <h3 class="service-name">Strategic Learning Partnership</h3>
+    <p class="service-description">When you need a strategic ally to think and work alongside your team. I offer sustained engagements to a limited number of clients.</p>
+    <hr class="service-divider">
+    <p class="service-receive">You receive strategic input, design oversight, project management, and production capacity — without the need to grow your headcount.</p>
+  </div>
+
+</div>
