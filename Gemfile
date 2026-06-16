@@ -1,5 +1,1 @@
-source 'https://rubygems.org'
-gem "bundler"
-gem "jekyll"
-gem "jekyll-paginate"
-gem "jekyll-sitemap"
+c291cmNlICdodHRwczovL3J1YnlnZW1zLm9yZycKZ2VtICJnaXRodWItcGFnZXMiLCBncm91cDogOmpla3lsbF9wbHVnaW5zCmdlbSAiYnVuZGxlciIK
