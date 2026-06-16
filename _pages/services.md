@@ -1,1 +1,103 @@
-LS0tCmxheW91dDogcGFnZQp0aXRsZTogU2VydmljZXMKbWV0YV90aXRsZTogU2VydmljZXMg4oCUIEpvaGFyIFNpbmdoCnBlcm1hbGluazogL3NlcnZpY2VzLwptZXRhX2Rlc2NyaXB0aW9uOiBTdHJhdGVnaWMgc2VydmljZXMgdG8gYWRkcmVzcyB5b3VyIHRyYWluaW5nIGNoYWxsZW5nZXMgYW5kIHN1cHBvcnQgYmV0dGVyIG91dGNvbWVzIGZvciB5b3VyIHBlb3BsZS4KaW1hZ2U6IC9pbWFnZXMvc2VydmljZXMtaGVyby53ZWJwCi0tLQoKSSBvZmZlciBzdHJhdGVnaWMgc2VydmljZXMgdGhhdCB0YXJnZXQgeW91ciB0cmFpbmluZyBjaGFsbGVuZ2VzIGFuZCBzdXBwb3J0IGJldHRlciBvdXRjb21lcyBmb3IgeW91ciBwZW9wbGUuCgo8c3R5bGU+Ci5zZXJ2aWNlcy1ncmlkIHsKICBkaXNwbGF5OiBncmlkOwogIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjsKICBnYXA6IDI0cHg7CiAgbWFyZ2luLXRvcDogNDBweDsKfQoKLnNlcnZpY2UtY2FyZCB7CiAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZC1hbHQtY29sb3IpOwogIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoNDQsNDAsMzcsMC4xMik7CiAgYm9yZGVyLXJhZGl1czogMjJweDsKICBwYWRkaW5nOiAzMnB4OwogIHdpbGwtY2hhbmdlOiB0cmFuc2Zvcm07CiAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIC4zcyBlYXNlOwogIHRleHQtYWxpZ246IGNlbnRlcjsKfQoKLnNlcnZpY2UtY2FyZDpob3ZlciB7CiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC04cHgpOwp9Cgouc2VydmljZS1pY29uIHsKICB3aWR0aDogNDBweDsKICBoZWlnaHQ6IDQwcHg7CiAgbWFyZ2luOiAwIGF1dG8gMTZweDsKICBjb2xvcjogdmFyKC0tY29sb3ItcHJpbWFyeSwgIzNEMUYyNCk7Cn0KCi5zZXJ2aWNlLW5hbWUgewogIG1hcmdpbi10b3A6IDA7CiAgbWFyZ2luLWJvdHRvbTogMTJweDsKfQoKLnNlcnZpY2UtZGVzY3JpcHRpb24gewogIHRleHQtYWxpZ246IGxlZnQ7CiAgbWFyZ2luLWJvdHRvbTogMjBweDsKfQoKLnNlcnZpY2UtZGl2aWRlciB7CiAgYm9yZGVyOiBub25lOwogIGJvcmRlci10b3A6IDFweCBzb2xpZCByZ2JhKDQ0LDQwLDM3LDAuMTIpOwogIG1hcmdpbjogMCAwIDE2cHg7Cn0KCi5zZXJ2aWNlLXJlY2VpdmUgewogIGZvbnQtc2l6ZTogMTVweDsKICBjb2xvcjogdmFyKC0tY29sb3ItbGFiZWwsICM2OTYzNUUpOwogIHRleHQtYWxpZ246IGxlZnQ7CiAgbWFyZ2luLWJvdHRvbTogMDsKfQoKQG1lZGlhIChtYXgtd2lkdGg6IDY0MHB4KSB7CiAgLnNlcnZpY2VzLWdyaWQgewogICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7CiAgfQp9Cjwvc3R5bGU+Cgo8ZGl2IGNsYXNzPSJzZXJ2aWNlcy1ncmlkIj4KCiAgPGRpdiBjbGFzcz0ic2VydmljZS1jYXJkIj4KICAgIDxkaXYgY2xhc3M9InNlcnZpY2UtaWNvbiI+CiAgICAgIDwhLS0gaWNvbjogY29udmVyc2F0aW9uLXF1ZXN0aW9uLnN2ZyAtLT4KICAgIDwvZGl2PgogICAgPGgzIGNsYXNzPSJzZXJ2aWNlLW5hbWUiPkxlYXJuaW5nIENvbnN1bHQ8L2gzPgogICAgPHAgY2xhc3M9InNlcnZpY2UtZGVzY3JpcHRpb24iPldoZW4geW91IG5lZWQgc3RyYXRlZ2ljIHN1cHBvcnQgdG8gYWRkcmVzcyBhIHNwZWNpZmljIHBlcmZvcm1hbmNlIGNoYWxsZW5nZS4gSSB3b3JrIHdpdGggeW91IHRvIGlkZW50aWZ5IHRoZSByb290IGNhdXNlcyBvZiB5b3VyIHBlcmZvcm1hbmNlIGdhcCBhbmQgb3V0bGluZSBhIHdlbGwtZGVzaWduZWQgbGVhcm5pbmcgc29sdXRpb24gdG8gc29sdmUgaXQuPC9wPgogICAgPGhyIGNsYXNzPSJzZXJ2aWNlLWRpdmlkZXIiPgogICAgPHAgY2xhc3M9InNlcnZpY2UtcmVjZWl2ZSI+WW91IHJlY2VpdmUgYSBsZWFybmluZyBuZWVkcyBhc3Nlc3NtZW50IGFuZCBhIGNsZWFyIHN0cmF0ZWd5IGZvciBwZXJmb3JtYW5jZSBpbXByb3ZlbWVudHMuPC9wPgogIDwvZGl2PgoKICA8ZGl2IGNsYXNzPSJzZXJ2aWNlLWNhcmQiPgogICAgPGRpdiBjbGFzcz0ic2VydmljZS1pY29uIj4KICAgICAgPCEtLSBpY29uOiBwYXJhZ3JhcGhzLWJ1bGxldHMuc3ZnIC0tPgogICAgPC9kaXY+CiAgICA8aDMgY2xhc3M9InNlcnZpY2UtbmFtZSI+TGVhcm5pbmcgQXVkaXQ8L2gzPgogICAgPHAgY2xhc3M9InNlcnZpY2UtZGVzY3JpcHRpb24iPldoZW4geW91IHdhbnQgdG8gbGV2ZWwgdXAgdGhlIGVmZmVjdGl2ZW5lc3Mgb2YgeW91ciBleGlzdGluZyB0cmFpbmluZyBwcm9ncmFtcy4gSSBhdWRpdCB5b3VyIHByb2dyYW0gYWdhaW5zdCByZXNlYXJjaC12YWxpZGF0ZWQgc3RhbmRhcmRzIOKAlCBhbmQgZXZhbHVhdGUgdGhlIHN0cmVuZ3RocyBhbmQgd2Vha25lc3NlcyBvZiB5b3VyIHByb2R1Y3RzLjwvcD4KICAgIDxociBjbGFzcz0ic2VydmljZS1kaXZpZGVyIj4KICAgIDxwIGNsYXNzPSJzZXJ2aWNlLXJlY2VpdmUiPllvdSByZWNlaXZlIGEgYmVuY2htYXJraW5nIHNjb3JlY2FyZCBhbmQgcHJpb3JpdGl6ZWQgaW1wcm92ZW1lbnQgcGxhbiB3aXRoIHNwZWNpZmljIGV2aWRlbmNlLWluZm9ybWVkIHJlY29tbWVuZGF0aW9ucy48L3A+CiAgPC9kaXY+CgogIDxkaXYgY2xhc3M9InNlcnZpY2UtY2FyZCI+CiAgICA8ZGl2IGNsYXNzPSJzZXJ2aWNlLWljb24iPgogICAgICA8IS0tIGljb246IGRlc2lnbi1wcm9jZXNzLXBlbi5zdmcgLS0+CiAgICA8L2Rpdj4KICAgIDxoMyBjbGFzcz0ic2VydmljZS1uYW1lIj5DdXN0b20gTGVhcm5pbmcgU29sdXRpb25zPC9oMz4KICAgIDxwIGNsYXNzPSJzZXJ2aWNlLWRlc2NyaXB0aW9uIj5XaGVuIHlvdSBuZWVkIGFuIG91dGNvbWUtb3JpZW50ZWQgdHJhaW5pbmcgc29sdXRpb24gYnVpbHQgZm9yIHlvdXIgcGVvcGxlLiBJIHdvcmsgd2l0aCB5b3UgdG8gYWxpZ24gYW5kIGRlc2lnbiBhIGxlYXJuaW5nIHNvbHV0aW9uIHRoYXQgZml0cyBmb3IgeW91ciBwZW9wbGUgYW5kIG1lZXRzIHlvdXIgZ29hbHMuPC9wPgogICAgPGhyIGNsYXNzPSJzZXJ2aWNlLWRpdmlkZXIiPgogICAgPHAgY2xhc3M9InNlcnZpY2UtcmVjZWl2ZSI+WW91IHJlY2VpdmUgYSBjYWxpYnJhdGVkIHRyYWluaW5nIHByb2R1Y3QgYW5kIGFuIGV2YWx1YXRpb24gZnJhbWV3b3JrIGZvciB0cmFja2luZyBpdHMgc3VjY2Vzcy48L3A+CiAgPC9kaXY+CgogIDxkaXYgY2xhc3M9InNlcnZpY2UtY2FyZCI+CiAgICA8ZGl2IGNsYXNzPSJzZXJ2aWNlLWljb24iPgogICAgICA8IS0tIGljb246IGJ1c2luZXNzLWRlYWwtaGFuZHNoYWtlLnN2ZyAtLT4KICAgIDwvZGl2PgogICAgPGgzIGNsYXNzPSJzZXJ2aWNlLW5hbWUiPlN0cmF0ZWdpYyBMZWFybmluZyBQYXJ0bmVyc2hpcDwvaDM+CiAgICA8cCBjbGFzcz0ic2VydmljZS1kZXNjcmlwdGlvbiI+V2hlbiB5b3UgbmVlZCBhIHN0cmF0ZWdpYyBhbGx5IHRvIHRoaW5rIGFuZCB3b3JrIGFsb25nc2lkZSB5b3VyIHRlYW0uIEkgb2ZmZXIgc3VzdGFpbmVkIGVuZ2FnZW1lbnRzIHRvIGEgbGltaXRlZCBudW1iZXIgb2YgY2xpZW50cy48L3A+CiAgICA8aHIgY2xhc3M9InNlcnZpY2UtZGl2aWRlciI+CiAgICA8cCBjbGFzcz0ic2VydmljZS1yZWNlaXZlIj5Zb3UgcmVjZWl2ZSBzdHJhdGVnaWMgaW5wdXQsIGRlc2lnbiBvdmVyc2lnaHQsIHByb2plY3QgbWFuYWdlbWVudCwgYW5kIHByb2R1Y3Rpb24gY2FwYWNpdHkg4oCUIHdpdGhvdXQgdGhlIG5lZWQgdG8gZ3JvdyB5b3VyIGhlYWRjb3VudC48L3A+CiAgPC9kaXY+Cgo8L2Rpdj4K
+---
+layout: page
+title: Services
+meta_title: Services — Johar Singh
+permalink: /services/
+meta_description: Strategic services to address your training challenges and support better outcomes for your people.
+image: /images/services-hero.webp
+---
+
+I offer strategic services that target your training challenges and support better outcomes for your people.
+
+<style>
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background: var(--background-alt-color);
+  border: 1px solid rgba(44,40,37,0.12);
+  border-radius: 22px;
+  padding: 32px;
+  will-change: transform;
+  transition: transform .3s ease;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 16px;
+  color: var(--color-primary, #3D1F24);
+}
+
+.service-name {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.service-description {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.service-divider {
+  border: none;
+  border-top: 1px solid rgba(44,40,37,0.12);
+  margin: 0 0 16px;
+}
+
+.service-receive {
+  font-size: 15px;
+  color: var(--color-label, #69635E);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="services-grid">
+
+  <div class="service-card">
+    <div class="service-icon">
+      <!-- icon: conversation-question.svg -->
+    </div>
+    <h3 class="service-name">Learning Consult</h3>
+    <p class="service-description">When you need strategic support to address a specific performance challenge. I work with you to identify the root causes of your performance gap and outline a well-designed learning solution to solve it.</p>
+    <hr class="service-divider">
+    <p class="service-receive">You receive a learning needs assessment and a clear strategy for performance improvements.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <!-- icon: paragraphs-bullets.svg -->
+    </div>
+    <h3 class="service-name">Learning Audit</h3>
+    <p class="service-description">When you want to level up the effectiveness of your existing training programs. I audit your program against research-validated standards — and evaluate the strengths and weaknesses of your products.</p>
+    <hr class="service-divider">
+    <p class="service-receive">You receive a benchmarking scorecard and prioritized improvement plan with specific evidence-informed recommendations.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <!-- icon: design-process-pen.svg -->
+    </div>
+    <h3 class="service-name">Custom Learning Solutions</h3>
+    <p class="service-description">When you need an outcome-oriented training solution built for your people. I work with you to align and design a learning solution that fits for your people and meets your goals.</p>
+    <hr class="service-divider">
+    <p class="service-receive">You receive a calibrated training product and an evaluation framework for tracking its success.</p>
+  </div>
+
+  <div
