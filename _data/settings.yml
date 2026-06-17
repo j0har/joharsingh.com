@@ -40,9 +40,9 @@ social:
 # Hero Settings
 hero:
   enable: true
-  hero_title: Designing outcome-oriented learning solutions.
+  hero_title: Outcome-oriented learning solutions.
   hero_description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
-  hero_image: "/images/benchlands-hero.webp"
+  hero_image: "/images/01.jpg"
   hero_button_contact: Get in Touch
   hero_button_about: About Me
 
@@ -76,7 +76,9 @@ mailchimp_settings:
 
 #-------------------------------
 # Footer Settings
-footer_description: I'm just a nerd with a sixth-sense for Instructional Design. I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
+footer_description: I craft evidence-based learning solutions to build capability and improve performance outcomes.
+
+My mission is to help organizations design training that makes a measurable difference for professionals and the people they serve.
 
 
 #-------------------------------
