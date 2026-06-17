@@ -35,3 +35,9 @@
     color: var(--text-alt-color);
   }
 }
+
+.page__content a.button,
+.post__content a.button {
+  color: var(--button-color);
+  text-decoration: none;
+}
