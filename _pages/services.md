@@ -46,7 +46,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      {% include_relative /assets/icons/Conversation-Question-Text-1--Streamline-Freehand.svg %}
+      {% include icons/Conversation-Question-Text-1--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Learning Consult</h3>
     <p class="service-description">When you need strategic support to address a specific performance challenge. I work with you to identify the root causes of your performance gap and outline a well-designed learning solution to solve it.</p>
@@ -56,7 +56,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      {% include_relative /assets/icons/Search-Magnifier--Streamline-Freehand.svg %}
+      {% include icons/Search-Magnifier--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Learning Audit</h3>
     <p class="service-description">When you want to level up the effectiveness of your existing training programs. I audit your program against research-validated standards — and evaluate the strengths and weaknesses of your products.</p>
@@ -66,7 +66,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      {% include_relative /assets/icons/Design-Process-Pen-Idea--Streamline-Freehand.svg %}
+      {% include icons/Design-Process-Pen-Idea--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Custom Learning Solutions</h3>
     <p class="service-description">When you need an outcome-oriented training solution built for your people. I work with you to align and design a learning solution that fits for your people and meets your goals.</p>
@@ -76,7 +76,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      {% include_relative /assets/icons/Business-Deal-Handshake--Streamline-Freehand.svg %}
+      {% include icons/Business-Deal-Handshake--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Strategic Partnership</h3>
     <p class="service-description">When you need a trusted learning professional to think and work alongside your team. I offer sustained engagements to a limited number of clients.</p>
