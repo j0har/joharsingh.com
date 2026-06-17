@@ -16,7 +16,6 @@ I offer strategic services that target your training challenges and support bett
   gap: 24px;
   margin-top: 40px;
 }
-
 .service-card {
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
@@ -26,53 +25,28 @@ I offer strategic services that target your training challenges and support bett
   transition: transform .3s ease;
   text-align: center;
 }
-
-.service-card:hover {
-  transform: translateY(-8px);
-}
-
+.service-card:hover { transform: translateY(-8px); }
 .service-icon {
   width: 40px;
   height: 40px;
   margin: 0 auto 16px;
   color: var(--color-primary, #3D1F24);
 }
-
-.service-name {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-.service-description {
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.service-divider {
-  border: none;
-  border-top: 1px solid rgba(44,40,37,0.12);
-  margin: 0 0 16px;
-}
-
-.service-receive {
-  font-size: 15px;
-  color: var(--color-label, #69635E);
-  text-align: left;
-  margin-bottom: 0;
-}
-
-@media (max-width: 640px) {
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-}
+.service-icon svg { width: 100%; height: 100%; }
+.service-name { margin-top: 0; margin-bottom: 12px; }
+.service-description { text-align: left; margin-bottom: 20px; }
+.service-divider { border: none; border-top: 1px solid rgba(44,40,37,0.12); margin: 0 0 16px; }
+.service-receive { font-size: 15px; color: var(--color-label, #69635E); text-align: left; margin-bottom: 0; }
+.services-cta { text-align: center; margin-top: 56px; }
+.services-cta p { margin-bottom: 24px; color: var(--color-label, #69635E); }
+@media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
 </style>
 
 <div class="services-grid">
 
   <div class="service-card">
     <div class="service-icon">
-      <!-- icon: conversation-question.svg -->
+      {% include_relative /assets/icons/Conversation-Question-Text-1--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Learning Consult</h3>
     <p class="service-description">When you need strategic support to address a specific performance challenge. I work with you to identify the root causes of your performance gap and outline a well-designed learning solution to solve it.</p>
@@ -82,7 +56,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      <!-- icon: paragraphs-bullets.svg -->
+      {% include_relative /assets/icons/Search-Magnifier--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Learning Audit</h3>
     <p class="service-description">When you want to level up the effectiveness of your existing training programs. I audit your program against research-validated standards — and evaluate the strengths and weaknesses of your products.</p>
@@ -92,7 +66,7 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      <!-- icon: design-process-pen.svg -->
+      {% include_relative /assets/icons/Design-Process-Pen-Idea--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Custom Learning Solutions</h3>
     <p class="service-description">When you need an outcome-oriented training solution built for your people. I work with you to align and design a learning solution that fits for your people and meets your goals.</p>
@@ -102,12 +76,17 @@ I offer strategic services that target your training challenges and support bett
 
   <div class="service-card">
     <div class="service-icon">
-      <!-- icon: business-deal-handshake.svg -->
+      {% include_relative /assets/icons/Business-Deal-Handshake--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Strategic Partnership</h3>
-    <p class="service-description">When you need a strategic learning and development ally to support the work of your teams. I offer sustained engagements to a limited number of clients.</p>
+    <p class="service-description">When you need a trusted learning professional to think and work alongside your team. I offer sustained engagements to a limited number of clients.</p>
     <hr class="service-divider">
     <p class="service-receive">You receive strategic input, design oversight, and production capacity — without the need to grow your headcount.</p>
   </div>
 
+</div>
+
+<div class="services-cta">
+  <p>Contact me to learn more about solutions to elevate outcomes for your people.</p>
+  <a href="/contact/" class="button">Get in touch</a>
 </div>
