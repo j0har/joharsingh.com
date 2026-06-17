@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
+{% if page.hero_image %}
+<div class="hero__image">
+  <div class="hero__image__inner">
+    <img src="{{site.baseurl}}{{page.hero_image}}" alt="{{page.title}}">
+  </div>
+</div>
+{% endif %}
+  
 {% include head.html %}
 
 <body>
