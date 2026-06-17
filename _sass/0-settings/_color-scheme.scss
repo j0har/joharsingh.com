@@ -23,7 +23,7 @@
   --dark-blue:                 var(--color-primary);
   --rgb-image-color:           245, 242, 239;              /* warm off-white as RGB for gradients */
 
-  --image-gradient: linear-gradient(180deg, rgba(var(--rgb-image-color), 0.8), rgba(var(--rgb-image-color), 1));
+--image-gradient: linear-gradient(180deg, rgba(var(--rgb-image-color), 0), rgba(var(--rgb-image-color), 1));
 
   /* No text gradient — not used in this brand */
   --text-gradient: none;
