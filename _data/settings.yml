@@ -42,7 +42,7 @@ hero:
   enable: true
   hero_title: Outcome-oriented learning solutions.
   hero_description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
-  hero_image: "/images/01.webp"
+  hero_image: "/images/benchlands-hero.webp"
   hero_button_contact: Get in Touch
   hero_button_about: About Me
 
