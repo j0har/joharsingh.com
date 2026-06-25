@@ -151,6 +151,14 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .main-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .dark-mode {
   @media (max-width: $desktop) {
     .main-nav {
