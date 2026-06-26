@@ -3,6 +3,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/images/favicon/favicon.svg' | relative_url }}" type="image/svg+xml">
+
   <title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }} — {{ site.data.settings.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
   <meta name='description' content='{% if page.meta_description %}{{ page.meta_description | strip_html | strip_newlines | truncate: 160 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
 
