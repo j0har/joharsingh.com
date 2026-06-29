@@ -14,7 +14,7 @@
         </div>
 
         <div class="footer__info">
-          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a> &middot; Icons by <a href="https://streamlinehq.com" target="_blank" rel="noopener">Streamline</a></div>
+          <div class="copyright">{{site.time | date: '%Y'}} &copy; <a href="/">{{site.data.settings.title}}</a> <span class="footer-divider" aria-hidden="true"><svg width="8" height="8" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"><rect x="1.2" y="1.2" width="5.6" height="5.6" fill="#B8722A" transform="rotate(45 4 4)"></rect></svg></span> Icons by <a href="https://streamlinehq.com" target="_blank" rel="noopener">Streamline</a></div>
           <div class="footer__info__right">
             {% if site.data.settings.color_scheme == "auto" %}
             <div class="toggle-theme">

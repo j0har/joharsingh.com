@@ -7,7 +7,7 @@ meta_description: Strategic services to address your training challenges and sup
 image: /images/services-hero.webp
 ---
 
-I offer strategic services that target your training challenges and support better outcomes for your people.
+<p class="services-intro">I offer strategic services that target your training challenges and support better outcomes for your people.</p>
 
 <style>
 .services-grid {
@@ -15,6 +15,11 @@ I offer strategic services that target your training challenges and support bett
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   margin-top: 40px;
+}
+.services-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
 }
 .service-card {
   background: var(--background-alt-color);

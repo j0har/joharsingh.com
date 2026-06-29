@@ -262,6 +262,17 @@
   }
 }
 
+.footer-divider {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 8px;
+  vertical-align: middle;
+
+  svg {
+    display: block;
+  }
+}
+
 // Toggle Theme
 .toggle-theme {
   margin-right: 24px;
