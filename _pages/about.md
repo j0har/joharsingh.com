@@ -7,9 +7,9 @@ meta_description: A nerd with a sixth-sense for instructional design. I help org
 image: /images/example-1.jpg
 ---
 
-Hi, I'm Johar. I'm just a nerd with a sixth-sense for instructional design. I craft learning solutions that help people build meaningful skills.
+Hi, I'm Johar. I'm a nerd with a sixth-sense for instructional design. I craft learning solutions that help people build meaningful skills.
 
-Most professionals prefer learning experiences that are practical, integrated, and personally meaningful. They don't have the time, focus, or bandwidth to consume the shallow and passive content that training usually serves.
+Most professionals prefer learning experiences that are practical, integrated, and personally meaningful. They don't have the time, focus, or bandwidth to consume the shallow, passive content that training usually serves.
 
 That's why I design solutions to fit into the rhythm and flow of professional work and target the skill gaps that make a measurable difference for professionals and the people they serve.
 
