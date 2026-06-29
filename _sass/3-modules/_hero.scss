@@ -54,6 +54,11 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+
+    .hero__title__accent {
+      font-style: italic;
+      color: var(--color-accent);
+    }
   }
 
   .hero__description {
