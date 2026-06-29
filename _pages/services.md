@@ -84,7 +84,7 @@ image: /images/services-hero.webp
       {% include icons/Business-Deal-Handshake--Streamline-Freehand.svg %}
     </div>
     <h3 class="service-name">Strategic Partnership</h3>
-    <p class="service-description">When you need a trusted learning professional to think and work alongside your team. I offer sustained engagements to a limited number of clients.</p>
+    <p class="service-description">When you need a trusted learning professional to think and work alongside your team. I offer a limited number of sustained engagements for preferred clients and projects.</p>
     <hr class="service-divider">
     <p class="service-receive">You receive strategic input, design oversight, and production capacity — without the need to grow your headcount.</p>
   </div>
