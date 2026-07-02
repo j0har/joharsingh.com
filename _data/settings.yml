@@ -22,8 +22,8 @@ menu_settings:
       url: "/about/"
     - title: "Services"
       url: "/services/"
-    - title: "Projects"
-      url: "/projects/"
+    - title: "Portfolio"
+      url: "/portfolio/"
     - title: "Blog"
       url: "/blog/"
     - title: "Contact"
@@ -49,7 +49,7 @@ hero:
 
 #-------------------------------
 # Projects Settings
-section_projects_title: Projects
+section_projects_title: Portfolio
 
 
 #-------------------------------
@@ -89,8 +89,8 @@ footer_menu_settings:
       url: "/about/"
     - title: "Services"
       url: "/services/"
-    - title: "Projects"
-      url: "/projects/"
+    - title: "Portfolio"
+      url: "/portfolio/"
     - title: "Blog"
       url: "/blog/"
     - title: "Contact"
