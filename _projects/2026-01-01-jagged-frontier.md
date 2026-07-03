@@ -41,3 +41,9 @@ It also includes two ways to carry that model into practice: a downloadable self
 The solution is designed to be deployed 'campaign-style' with a PDF poster to tease the topic and direct employees to it, via a QR code. The poster previews the mental model and also serves as a takeaway job aid.
 
 This decision bypasses typical administrative friction by being accessible on mobile, without a login, completion tracking, or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completions and test scores.
+
+---
+
+## Research Foundation
+
+Dell'Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2025). [Navigating the jagged technological frontier: Field experimental evidence of the effects of AI on knowledge worker productivity and quality.](https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838?__cf_chl_f_tk=uv7DM9avu6Mevu5M6T4i.0hwTkxys_FEPaFiIkiIXr4-1783103929-1.0.1.1-kunpCUIACsh1nhYPHbAVspO.mfO_bgH8uESRWA3dkno) *Organization Science.*
