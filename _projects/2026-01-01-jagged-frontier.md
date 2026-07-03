@@ -4,17 +4,12 @@ subtitle: Microlearning
 summary: The Jagged Frontier is an AI literacy learning solution that helps professionals develop explicit judgement about where AI will perform most reliably for them.
 tools: Articulate Rise 360, Mighty by Maestro, Affinity
 duration: 5-7 minutes
-features: Mobile-responsive, job aid, transfer support, deployable in the flow of work
+features: Job aid, transfer support, deployable in the flow of work
 demo_url: https://j0har.github.io/jagged-frontier/
 date: 2026-06-14
 image: '/images/jagged-frontier.webp'
 ---
 
-Most of us, by now, have experienced the uneven terrain of AI capability. We've all encountered peaks and valleys in its performance. And we've probably all wondered where we can use AI reliably at work.
-
-The variable performance of AI is referred to by researchers as the 'jagged frontier'. It's a spatial metaphor that explains how AI improves performance for some tasks but worsens it for others.
-
-This project was designed to help people navigate this conceptual 'frontier' and answer the question: where can you rely on AI?
 
 ## The Skill Gap
 
@@ -24,6 +19,8 @@ The research study found that AI helped complete work 25% faster at 40% higher q
 
 Based on these observations, the skill gap to target is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
 
+---
+
 ## The Solution
 
 My goal was to address this skill gap with something that could integrate into the flow of work.
@@ -31,6 +28,8 @@ My goal was to address this skill gap with something that could integrate into t
 The solution is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback.
 
 It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
+
+---
 
 ## The Design Decisions
 
