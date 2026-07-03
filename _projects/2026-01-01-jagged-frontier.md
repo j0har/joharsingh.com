@@ -1,7 +1,7 @@
 ---
 title: The Jagged Frontier
 subtitle: Microlearning
-summary: The Jagged Frontier is an AI literacy learning solution that helps professionals develop explicit judgement about where AI will perform most reliably for them.
+summary: This AI literacy learning solution is designed to help professionals develop explicit judgement about where AI will perform most reliably for them.
 tools: Articulate Rise 360, Mighty by Maestro, Affinity
 duration: 5-7 minutes
 features: Job aid, transfer support, deployable in the flow of work
