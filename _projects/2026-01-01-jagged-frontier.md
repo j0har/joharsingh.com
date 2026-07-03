@@ -10,6 +10,11 @@ date: 2026-06-14
 image: '/images/jagged-frontier.webp'
 ---
 
+Most of us, by now, have experienced the uneven terrain of AI capability. We've all encountered peaks and valleys in its performance. And we've probably all wondered where we can use AI reliably at work.
+
+The variable performance of AI is referred to by researchers as the 'jagged frontier'. It's a spatial metaphor that explains how AI improves performance for some tasks but worsens it for others.
+
+This project was designed to help people navigate this conceptual 'frontier' and answer the question: where can you rely on AI?
 
 ## The Skill Gap
 
