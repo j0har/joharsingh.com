@@ -14,7 +14,7 @@
 
       <div class="recent-project__content">
         <h4 class="recent-project__title">
-          <a href="{{ project.url }}">{{ project.title }}</a>
+          <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
         </h4>
         <p class="recent-project__summary">{{ project.summary }}</p>
       </div>

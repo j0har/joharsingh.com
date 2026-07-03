@@ -15,7 +15,7 @@ meta_description: A selection of experiments in evidence-based, engagement-focus
       {% if project.image %}
       <div class="project__head">
         <div class="project__image">
-          <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
+          <img class="lazy" data-src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.title }}">
         </div>
       </div>
       {% endif %}
@@ -26,7 +26,7 @@ meta_description: A selection of experiments in evidence-based, engagement-focus
           {% endif %}
         </div>
         <h3 class="project__title">
-          <a href="{{ project.url }}" class="project__link">{{ project.title }}</a>
+          <a href="{{ site.baseurl }}{{ project.url }}" class="project__link">{{ project.title }}</a>
         </h3>
         {% if project.summary %}
         <p class="project__excerpt">{{ project.summary }}</p>
