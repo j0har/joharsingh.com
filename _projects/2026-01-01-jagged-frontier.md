@@ -16,8 +16,6 @@ The variable performance of AI is referred to by researchers as the 'jagged fron
 
 This project was designed to help people navigate this conceptual 'frontier' and answer the question: where can you rely on AI?
 
-<a href="https://j0har.github.io/jagged-frontier/" class="button button--middle" target="_blank" rel="noopener">Launch Demo</a>
-
 ## The Skill Gap
 
 Most people make the mistake of trying to evaluate AI by reviewing its outputs. The problem is that, whether it's right or wrong, AI's responses always appear clear, confident, and well-structured. This makes surface-level outputs a poor predictor of AI reliability (Dell'Acqua et al., 2023).
@@ -26,8 +24,6 @@ The research study found that AI helped complete work 25% faster at 40% higher q
 
 Based on these observations, the skill gap to target is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
 
----
-
 ## The Solution
 
 My goal was to address this skill gap with something that could integrate into the flow of work.
@@ -35,8 +31,6 @@ My goal was to address this skill gap with something that could integrate into t
 The solution is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback.
 
 It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
-
----
 
 ## The Design Decisions
 
