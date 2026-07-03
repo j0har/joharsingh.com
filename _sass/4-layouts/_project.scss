@@ -161,6 +161,11 @@
     color: var(--text-color);
   }
 
+  .project-meta__cta {
+    display: inline-block;
+    margin-top: 24px;
+  }
+  
   @media (max-width: $desktop) {
     .project-meta__item {
       margin-top: 12px;
