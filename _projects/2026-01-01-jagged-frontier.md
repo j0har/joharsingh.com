@@ -14,13 +14,13 @@ image: '/images/jagged-frontier.webp'
 
 Most of us, by now, have experienced the uneven terrain of AI capability. We've all encountered peaks and valleys in its performance. And we've probably all wondered where we can use AI reliably at work.
 
-The variable performance of AI is referred to by researchers as the 'jagged frontier'. It's a spatial metaphor that explains how AI improves performance for some tasks but worsens it for others.
+Researchers refer to the variable performance of AI as the 'jagged frontier'. It's a spatial metaphor that explains how AI improves performance for some tasks but worsens it for others.
 
 This project was designed to help people navigate this conceptual 'frontier' and answer the question: where can you rely on AI?
 
-Most people make the mistake of trying to evaluate AI by reviewing its outputs. The problem is that, whether it's right or wrong, AI's responses always appear clear, confident, and well-structured. This makes surface-level outputs a poor predictor of AI reliability (Dell'Acqua et al., 2026).
+Most people make the mistake of trying to evaluate AI by reviewing its outputs. The problem is that, whether it's right or wrong, AI's responses always appear clear, confident, and well-structured. This makes surface-level outputs a poor predictor of AI reliability [(Dell'Acqua et al., 2026)](https://doi.org/10.1287/orsc.2025.21838).
 
-The research study found that AI helped complete work 25% faster at 40% higher quality on tasks within the frontier of its capabilities, but made performance 19% worse on tasks outside it.
+Researchers found that AI could help complete work 25% faster at 40% higher quality on tasks within the frontier of its capabilities, but made performance 19% worse on tasks outside it.
 
 Based on these observations, the skill gap to target is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
 
@@ -32,7 +32,7 @@ My goal was to address this skill gap with something that could integrate into t
 
 The solution is designed to be deployed 'campaign-style' with a PDF poster to tease the topic and direct employees to it, via a QR code. The poster previews the mental model and also serves as a takeaway job aid.
 
-This decision bypasses typical administrative friction by being accessible on mobile, without a login, completion tracking, or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completions and test scores.
+This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores.
 
 The solution is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback.
 
@@ -42,5 +42,4 @@ It also includes two ways to carry that model into practice: a downloadable self
 
 ## Research Foundation
 
-Dell’Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K. C., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2026). Navigating the jagged technological frontier: Field experimental evidence of the effects of AI on knowledge worker productivity and quality. Organization Science, 37(2), 403–423. https://doi.org/10.1287/orsc.2025.21838
-
+Dell’Acqua, F., McFowland, E., Mollick, E. R., Lifshitz-Assaf, H., Kellogg, K. C., Rajendran, S., Krayer, L., Candelon, F., & Lakhani, K. R. (2026). Navigating the jagged technological frontier: Field experimental evidence of the effects of AI on knowledge worker productivity and quality. Organization Science, 37(2), 403–423. [https://doi.org/10.1287/orsc.2025.21838](https://doi.org/10.1287/orsc.2025.21838)
