@@ -179,6 +179,17 @@ a {
   }
 }
 
+.page__content a,
+.post__content a {
+  font-weight: 500;
+  border-bottom: 1px solid var(--link-color);
+
+  &:hover {
+    color: var(--link-color-hover);
+    border-bottom-color: var(--link-color-hover);
+  }
+}
+
 hr {
   width: 100%;
   height: 1px;
