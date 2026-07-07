@@ -26,7 +26,7 @@ layout: default
 
 <!-- begin page -->
 <div class="{% if page.wide %}container-big{% else %}container{% endif %}">
-  <article class="page">
+  <article class="page{% if page.wide %} page--wide{% endif %}">
     <div class="page__content">
       {{ content }}
     </div>
