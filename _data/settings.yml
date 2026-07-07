@@ -69,9 +69,11 @@ section_tags_title: Explore Topics
 
 
 #-------------------------------
-# Newsletter Settings
-mailchimp_settings:
-  enable: false
+# Newsletter Settings (Kit)
+newsletter_settings:
+  enable: true
+  newsletter_action: "https://app.kit.com/forms/9658065/subscriptions"
+  newsletter_title: "Join the Newsletter"
 
 
 #-------------------------------
