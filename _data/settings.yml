@@ -100,7 +100,7 @@ footer_menu_settings:
 #-------------------------------
 # Contact Settings
 contact:
-  email: ""
+  formspree_id: "mzdlqrel"
   description: If you want to team up on your next project, shoot me a message to get started. Tell me a bit about your goals, timeline, and any specific challenges you want to address.
 
 
