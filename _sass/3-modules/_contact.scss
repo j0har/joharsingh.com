@@ -25,6 +25,7 @@
   padding: 20px;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
   border: 2px solid transparent;
   border-radius: 12px;
   outline: 0;
@@ -41,4 +42,23 @@
     border-color: var(--primary-color);
     background-color: transparent;
   }
+}
+
+/*
+  Native <select> chrome (especially iOS Safari, Android Chrome) ignores the
+  padding/line-height box model that text inputs already respect, which is
+  why the three dropdowns were rendering at inconsistent heights/widths
+  across devices. Stripping OS-native appearance and drawing a custom caret
+  routes selects through the same box model as inputs so they match exactly.
+*/
+select.form__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px 8px;
+  cursor: pointer;
 }
