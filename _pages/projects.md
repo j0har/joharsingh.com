@@ -5,7 +5,6 @@ description: A selection of experiments in evidence-based, engagement-focused de
 meta_title: Portfolio — Johar Singh
 permalink: /portfolio/
 meta_description: A selection of experiments in evidence-based, engagement-focused design — microlearning and simulation-based learning.
-wide: true
 ---
 
 <div class="row">
