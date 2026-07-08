@@ -11,10 +11,24 @@ $mobile: 576px;
 $mq: ( $mobile:$columns, $tablet:$columns, $desktop:$columns );
 
 .container-big {
-  max-width: 100%;
+  max-width: $container-base-width;
   margin: 0 auto;
   padding-left: calc(#{$container-offset} * 2);
   padding-right: calc(#{$container-offset} * 2);
+
+  @media (max-width: $wide) {
+    max-width: 1000px;
+    padding-left: $container-offset;
+    padding-right: $container-offset;
+  }
+
+  @media (max-width: $desktop) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $tablet) {
+    max-width: 560px;
+  }
 
   @media (max-width: $mobile) {
     max-width: 480px;
