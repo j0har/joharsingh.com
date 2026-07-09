@@ -37,18 +37,7 @@ In order to be effective, the solution to this skill gap needed to integrate int
 
 This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores. The focus, instead, is on targeting AI literacy and critical thinking skills that cannot be quantified through those typical metrics.
 
-The module is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback.
-
-<div style="margin-bottom:1.5rem;">
-  <img src="{{ site.baseurl }}/images/jf-mental-model.webp" alt="Module screen posing the core mental model as a question: 'Would you know if AI's response was wrong?' with a Yes/No branch explaining what each answer means for relying on AI, and a prompt to apply the key question to three scenarios." style="width:100%;">
-</div>
-
-It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
-
-<div style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem;">
-  <img src="{{ site.baseurl }}/images/jf-scenario.webp" alt="Practice scenario screen: a realistic work task (drafting presentation talking points from saved notes) paired with four judgment-based answer options for whether AI will produce reliable output." style="flex:1; min-width:240px;">
-  <img src="{{ site.baseurl }}/images/jf-transfer1.webp" alt="Self-reflection exercise prompting learners to name a task they're working on, judge whether AI is a good fit for it, and consider whether they'd catch an AI error, with an open text field for their answer." style="flex:1; min-width:240px;">
-</div>
+The module is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback. It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
 
 Overall, this project explicitly teaches people about how to navigate the 'jagged frontier' of AI's capabilities. Implicitly, the user experience was designed to create the atmosphere and sensation of scrolling through an uncertain and uneven landscape.
 
