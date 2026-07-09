@@ -8,7 +8,7 @@ features: Job aid, transfer support, deployable in the flow of work
 demo_url: https://j0har.github.io/jagged-frontier/
 date: 2026-06-14
 image: '/images/jagged-frontier.webp'
-image_alt: 'Mockup of The Jagged Frontier module and companion job-aid poster on tablet and phone screens, both posing the module'’s opening question: “If AI gets it wrong, would you know?”'
+image_alt: "Mockup of The Jagged Frontier module and companion job-aid poster on tablet and phone screens, both posing the module's opening question: 'If AI gets it wrong, would you know?'"
 ---
 
 ## The Goal
