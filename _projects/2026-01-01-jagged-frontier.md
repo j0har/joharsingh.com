@@ -39,8 +39,6 @@ This decision bypasses typical administrative friction by being accessible witho
 
 The module is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback. It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
 
-Overall, this project explicitly teaches people about how to navigate the 'jagged frontier' of AI's capabilities. Implicitly, the user experience was designed to create the atmosphere and sensation of scrolling through an uncertain and uneven landscape.
-
 ---
 
 ## References
