@@ -3,7 +3,7 @@
 title: Johar Singh
 logo: "/images/logo.svg"
 logo_dark: "/images/logo-dark.svg"
-description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
+description: I design learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
 color_scheme: auto
 
 
@@ -41,7 +41,7 @@ social:
 hero:
   enable: true
   hero_title: '<em class="hero__title__accent">Outcome-oriented</em> learning solutions.'
-  hero_description: I craft learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
+  hero_description: I design learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
   hero_image: "/images/Selkie-background.webp"
   hero_button_contact: Get in Touch
   hero_button_about: About Me
@@ -78,7 +78,7 @@ newsletter_settings:
 
 #-------------------------------
 # Footer Settings
-footer_description: I craft learning solutions that build capability and improve performance outcomes.
+footer_description: I design user-friendly learning solutions that build capability and improve performance outcomes.
 
 
 #-------------------------------
