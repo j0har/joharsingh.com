@@ -33,7 +33,7 @@ Based on these observations, the skill gap to target is the user's ability to co
 
 ## The Solution
 
-In order to be effective, the solution to this skill gap needed to integrate into the flow of work. It is designed to be deployed 'campaign-style' with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf). The poster previews the mental model and also serves as a takeaway job aid.
+In order to be effective, the solution to this skill gap needs to integrate into the flow of work. It is designed to be deployed 'campaign-style' with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf). The poster previews the mental model and also serves as a takeaway job aid.
 
 This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores. The focus, instead, is on targeting AI literacy and critical thinking skills that cannot be quantified through those typical metrics.
 
