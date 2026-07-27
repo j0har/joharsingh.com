@@ -28,7 +28,7 @@ Most people make the mistake of trying to evaluate AI by reviewing its outputs. 
 
 Researchers found that AI could help complete work **25% faster at 40% higher quality** on tasks within the frontier of its capabilities, but made performance **19% worse** on tasks outside it [(Dell'Acqua et al., 2026)](https://doi.org/10.1287/orsc.2025.21838).
 
-Based on these observations, the skill gap to target is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
+Based on these observations, the skill gap to target, in this area of AI literacy, is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
 
 ---
 
