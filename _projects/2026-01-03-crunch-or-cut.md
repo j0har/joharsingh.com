@@ -1,6 +1,6 @@
 ---
 title: Crunch or Cut
-subtitle: Branching Simulation
+subtitle: Simulation
 summary: A branching simulation for creative project managers navigating scope decisions under pressure — practicing the judgment calls that determine whether a project ships on time.
 meta_description: A branching simulation for creative project managers navigating scope decisions under pressure — practicing the judgment calls that determine whether a project ships on time.
 client: Portfolio
