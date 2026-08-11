@@ -14,9 +14,9 @@ image_alt: "Mockup of The Jagged Frontier module and companion job-aid poster on
 
 ## The Goal
 
-Most of us, by now, have experienced the uneven terrain of AI capability. We've all encountered peaks and valleys in its performance. And we've probably all wondered where we can use AI reliably at work.
+Most of us, by now, have experienced the uneven terrain of AI capability. We've all encountered peaks and valleys in its performance. And we've probably all wondered where we can genuinely rely on AI at work.
 
-Researchers refer to the variable performance of AI as the 'jagged frontier'. It's a spatial metaphor that explains how AI improves performance for some tasks but worsens it for others.
+Researchers refer to the variable landscape of AI performance as the 'jagged frontier'. It's a spatial metaphor that explains how AI can improve performance for some tasks but also worsen it for others.
 
 This project was designed to help people navigate this conceptual 'frontier' and answer the question: *where can you rely on AI?*
 
@@ -28,17 +28,16 @@ Most people make the mistake of trying to evaluate AI by reviewing its outputs. 
 
 Researchers found that AI could help complete work **25% faster at 40% higher quality** on tasks within the frontier of its capabilities, but made performance **19% worse** on tasks outside it [(Dell'Acqua et al., 2026)](https://doi.org/10.1287/orsc.2025.21838).
 
-Based on these observations, the skill gap to target, in this area of AI literacy, is the user's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
+Based on these observations, the skill gap to target in this area of AI literacy is the learner's ability to correctly judge, in advance, which side of the AI capability frontier a task falls on.
 
 ---
 
 ## The Solution
+In order to target the skill gap at a time of need, the solution is designed to integrate into the flow of work. It's set up to be deployed in a campaign format with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf). The poster previews the mental model and also serves as a takeaway job aid.
 
-In order to be effective, the solution to this skill gap needs to integrate into the flow of work. It is designed to be deployed 'campaign-style' with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf). The poster previews the mental model and also serves as a takeaway job aid.
+This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores. Instead, the focus is on targeting AI literacy and critical thinking skills that cannot be quantified through those typical metrics.
 
-This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores. The focus, instead, is on targeting AI literacy and critical thinking skills that cannot be quantified through those typical metrics.
-
-The module is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows users to practice its application in a series of realistic work scenarios and receive immediate feedback. It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of the user's own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with the user's team.
+The module is framed around a lean and transferrable mental model for judging AI reliability. It teaches the model concisely and then allows learners to practice its application in a series of realistic work scenarios and receive immediate feedback. It also includes two ways to carry that model into practice: a downloadable self-reflection exercise to apply it to one of their own work tasks, and a set of discussion prompts to encourage conversations about the jagged frontier with their team.
 
 ---
 
