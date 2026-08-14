@@ -10,19 +10,20 @@ image: /images/example-1.jpg
 <style>
 .about-banner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
   border-radius: 16px;
-  padding: 18px 28px;
+  padding: 20px 28px;
   margin: 32px 0;
 }
 .about-banner-icon {
   flex: 0 0 auto;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
+  margin-top: 2px;
   color: var(--color-primary, #3D1F24);
 }
 .about-banner-icon svg { width: 100%; height: 100%; }
@@ -34,13 +35,14 @@ image: /images/example-1.jpg
   max-width: 560px;
 }
 @media (max-width: 640px) {
-  .about-banner { flex-direction: column; text-align: center; padding: 20px 24px; }
+  .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px; }
+  .about-banner-icon { margin-top: 0; }
 }
 </style>
 
 <div class="about-banner">
   <div class="about-banner-icon">
-    {% include icons/Product-Launch-Laptop--Streamline-Freehand.svg %}
+    {% include icons/Business-Coaching-Idea-Jigsaw--Streamline-Freehand.svg %}
   </div>
   <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
 </div>
