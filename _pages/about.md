@@ -7,6 +7,41 @@ meta_description: A nerd with a sixth-sense for instructional design. I help org
 image: /images/example-1.jpg
 ---
 
+<style>
+.about-banner {
+  background: var(--background-alt-color);
+  border: 1px solid rgba(44,40,37,0.12);
+  border-radius: 22px;
+  padding: 32px 40px;
+  text-align: center;
+  margin: 40px 0;
+}
+.about-banner-icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  color: var(--color-primary, #3D1F24);
+}
+.about-banner-icon svg { width: 100%; height: 100%; }
+.about-banner-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 640px;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .about-banner { padding: 28px 24px; }
+}
+</style>
+
+<div class="about-banner">
+  <div class="about-banner-icon">
+    {% include icons/Business-Coaching-Strategy-1--Streamline-Freehand.svg %}
+  </div>
+  <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
+</div>
+
 Hi, I'm Johar. I'm a nerd with a sixth-sense for instructional design. I craft learning solutions that help people build meaningful skills.
 
 Most professionals prefer learning experiences that are practical, integrated, and personally meaningful. They don't have the time, focus, or bandwidth to consume the shallow, passive content that training usually serves.
