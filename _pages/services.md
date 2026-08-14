@@ -39,7 +39,7 @@ image: /images/services-hero.webp
 }
 .service-icon svg { width: 100%; height: 100%; }
 .service-name { margin-top: 0; margin-bottom: 12px; }
-.service-trigger { text-align: center; margin: 0 0 12px; font-weight: 600; }
+.service-trigger { text-align: center; margin: 0 0 12px; font-weight: 500; }
 .service-description { text-align: left; margin: 0 0 20px; }
 .service-divider { border: none; border-top: 1px solid rgba(44,40,37,0.12); margin: 0 0 16px; }
 .service-receive { font-size: 15px; color: var(--color-label, #69635E); text-align: left; margin-bottom: 0; }
