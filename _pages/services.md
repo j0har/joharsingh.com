@@ -92,6 +92,6 @@ image: /images/services-hero.webp
 </div>
 
 <div class="services-cta">
-  <p>Contact me to learn more about solutions to elevate outcomes for your people.</p>
+  <p>Contact me to learn more about elevating learning outcomes for your people.</p>
   <a href="/contact/" class="button">Get in touch</a>
 </div>
