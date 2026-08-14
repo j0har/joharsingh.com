@@ -11,18 +11,19 @@ image: /images/example-1.jpg
 .about-banner {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
+  gap: 16px;
+  width: fit-content;
+  max-width: 100%;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
   border-radius: 16px;
-  padding: 20px 28px;
-  margin: 32px 0;
+  padding: 18px 24px;
+  margin: 32px auto;
 }
 .about-banner-icon {
   flex: 0 0 auto;
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   margin-top: 2px;
   color: var(--color-primary, #3D1F24);
 }
@@ -32,10 +33,9 @@ image: /images/example-1.jpg
   font-size: 17px;
   font-weight: 500;
   line-height: 1.45;
-  max-width: 560px;
 }
 @media (max-width: 640px) {
-  .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px; }
+  .about-banner { flex-direction: column; align-items: center; text-align: center; width: auto; margin: 32px 16px; }
   .about-banner-icon { margin-top: 0; }
 }
 </style>
