@@ -11,31 +11,30 @@ image: /images/example-1.jpg
 .about-banner {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  width: fit-content;
-  max-width: 100%;
+  gap: 20px;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
   border-radius: 16px;
-  padding: 18px 24px;
-  margin: 32px auto;
+  padding: 20px 28px;
+  margin: 32px 0;
 }
 .about-banner-icon {
   flex: 0 0 auto;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   margin-top: 2px;
   color: var(--color-primary, #3D1F24);
 }
 .about-banner-icon svg { width: 100%; height: 100%; }
 .about-banner-text {
+  flex: 1 1 auto;
   margin: 0;
   font-size: 17px;
   font-weight: 500;
   line-height: 1.45;
 }
 @media (max-width: 640px) {
-  .about-banner { flex-direction: column; align-items: center; text-align: center; width: auto; margin: 32px 16px; }
+  .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px; }
   .about-banner-icon { margin-top: 0; }
 }
 </style>
