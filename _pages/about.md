@@ -9,35 +9,38 @@ image: /images/example-1.jpg
 
 <style>
 .about-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
-  border-radius: 22px;
-  padding: 32px 40px;
-  text-align: center;
-  margin: 40px 0;
+  border-radius: 16px;
+  padding: 18px 28px;
+  margin: 32px 0;
 }
 .about-banner-icon {
-  width: 56px;
-  height: 56px;
-  margin: 0 auto 16px;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
   color: var(--color-primary, #3D1F24);
 }
 .about-banner-icon svg { width: 100%; height: 100%; }
 .about-banner-text {
-  font-size: 20px;
+  margin: 0;
+  font-size: 17px;
   font-weight: 500;
-  line-height: 1.5;
-  max-width: 640px;
-  margin: 0 auto;
+  line-height: 1.45;
+  max-width: 560px;
 }
 @media (max-width: 640px) {
-  .about-banner { padding: 28px 24px; }
+  .about-banner { flex-direction: column; text-align: center; padding: 20px 24px; }
 }
 </style>
 
 <div class="about-banner">
   <div class="about-banner-icon">
-    {% include icons/Business-Coaching-Strategy-1--Streamline-Freehand.svg %}
+    {% include icons/Product-Launch-Laptop--Streamline-Freehand.svg %}
   </div>
   <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
 </div>
