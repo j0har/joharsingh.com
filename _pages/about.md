@@ -11,11 +11,11 @@ image: /images/example-1.jpg
 .about-banner {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 28px;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
   border-radius: 16px;
-  padding: 20px 28px;
+  padding: 24px 36px;
   margin: 32px 0;
 }
 .about-banner-icon {
@@ -34,7 +34,7 @@ image: /images/example-1.jpg
   line-height: 1.45;
 }
 @media (max-width: 640px) {
-  .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px; }
+  .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 24px 28px; }
   .about-banner-icon { margin-top: 0; }
 }
 </style>
