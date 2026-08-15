@@ -8,21 +8,15 @@ image: /images/example-1.jpg
 ---
 
 <style>
-.about-banner-wrap {
-  display: flex;
-  justify-content: center;
-  margin: 32px 0;
-}
 .about-banner {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
-  width: fit-content;
-  max-width: 100%;
+  gap: 20px;
   background: var(--background-alt-color);
   border: 1px solid rgba(44,40,37,0.12);
   border-radius: 16px;
   padding: 20px 28px;
+  margin: 32px 0;
 }
 .about-banner-icon {
   flex: 0 0 auto;
@@ -33,26 +27,23 @@ image: /images/example-1.jpg
 }
 .about-banner-icon svg { width: 100%; height: 100%; }
 .about-banner-text {
+  flex: 1 1 auto;
   margin: 0;
   font-size: 17px;
   font-weight: 500;
   line-height: 1.45;
-  max-width: 480px;
 }
 @media (max-width: 640px) {
   .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 20px 24px; }
   .about-banner-icon { margin-top: 0; }
-  .about-banner-text { max-width: none; }
 }
 </style>
 
-<div class="about-banner-wrap">
-  <div class="about-banner">
-    <div class="about-banner-icon">
-      {% include icons/Business-Coaching-Idea-Jigsaw--Streamline-Freehand.svg %}
-    </div>
-    <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
+<div class="about-banner">
+  <div class="about-banner-icon">
+    {% include icons/Business-Coaching-Idea-Jigsaw--Streamline-Freehand.svg %}
   </div>
+  <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
 </div>
 
 Hi, I'm Johar. I'm a nerd with a sixth-sense for instructional design. I craft learning solutions that help people build meaningful skills.
