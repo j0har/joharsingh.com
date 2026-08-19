@@ -3,7 +3,7 @@ layout: page
 title: Services
 meta_title: Services — Johar Singh
 permalink: /services/
-meta_description: Strategic services to address your training challenges and support better outcomes for your people.
+meta_description: I offer strategic services that target your training challenges. Consulting, audits, and custom learning solutions to elevate outcomes for your people.
 image: /images/services-hero.webp
 ---
 
