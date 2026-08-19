@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Portfolio
-description: A selection of experiments in evidence-based, engagement-focused design.
+description: Check out a selection of my interactive eLearning experiments. Demonstrations include: in-the-flow-of-work micro-learning, branching scenarios, and simulations.
 meta_title: Portfolio — Johar Singh
 permalink: /portfolio/
-meta_description: A selection of experiments in evidence-based, engagement-focused design — microlearning and simulation-based learning.
+meta_description: Check out a selection of my interactive eLearning experiments. Demonstrations include: in-the-flow-of-work micro-learning, branching scenarios, and simulations.
 wide: true
 ---
 
