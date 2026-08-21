@@ -42,6 +42,17 @@
   background-color: var(--background-alt-color);
 }
 
+// The raster icon's linework can't recolour itself the way the inline
+// SVG service icons do (currentColor + --color-primary). When a page
+// supplies a dark-mode variant (page.image_dark), swap which <img> is
+// shown instead of trying to force one static colour to work everywhere.
+.page-image__dark { display: none; }
+
+:root[dark] {
+  .page-image__light { display: none; }
+  .page-image__dark { display: block; }
+}
+
 .page__content a.button,
 .post__content a.button {
   color: var(--button-color);

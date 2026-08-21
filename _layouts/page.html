@@ -14,7 +14,10 @@ layout: default
 
     {% if page.image %}
     <div class="page-image">
-      <img src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+      <img src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}"{% if page.image_dark %} class="page-image__light"{% endif %}>
+      {% if page.image_dark %}
+      <img src="{{site.baseurl}}{{page.image_dark}}" alt="{{page.title}}" class="page-image__dark">
+      {% endif %}
     </div>
     {% if page.image_caption %}
     <div class="page-image-caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
