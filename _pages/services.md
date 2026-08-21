@@ -23,7 +23,7 @@ image: /images/services-hero.webp
 }
 .service-card {
   background: var(--background-alt-color);
-  border: 1px solid rgba(44,40,37,0.12);
+  border: 1px solid color-mix(in srgb, var(--color-body) 12%, transparent);
   border-radius: 22px;
   padding: 32px;
   will-change: transform;
@@ -41,7 +41,7 @@ image: /images/services-hero.webp
 .service-name { margin-top: 0; margin-bottom: 12px; }
 .service-trigger { text-align: center; margin: 0 0 12px; font-weight: 500; }
 .service-description { text-align: left; margin: 0 0 20px; }
-.service-divider { border: none; border-top: 1px solid rgba(44,40,37,0.12); margin: 0 0 16px; }
+.service-divider { border: none; border-top: 1px solid color-mix(in srgb, var(--color-body) 12%, transparent); margin: 0 0 16px; }
 .service-receive { font-size: 15px; color: var(--color-label, #69635E); text-align: left; margin-bottom: 0; }
 .services-cta { text-align: center; margin-top: 56px; }
 .services-cta p { margin-bottom: 24px; color: var(--color-label, #69635E); }

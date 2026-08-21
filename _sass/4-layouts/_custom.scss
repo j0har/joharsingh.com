@@ -36,6 +36,12 @@
   }
 }
 
+// Hero card image: transparent PNG/WebP now — paint the theme's card
+// colour behind it so it tracks light/dark mode automatically
+.page-image img {
+  background-color: var(--background-alt-color);
+}
+
 .page__content a.button,
 .post__content a.button {
   color: var(--button-color);
