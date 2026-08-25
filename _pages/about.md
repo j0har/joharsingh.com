@@ -79,6 +79,6 @@ Before my time in corporate L&D, I spent a decade as a nomadic adult educator an
 
 ### Personal Life
 
-When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming and comics backlog.
+When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming and comic book backlog.
 
-I live in the wine-growing region of Niagara (just across the lake from the city of Toronto) with my spouse (also an instructional designer) and a sweet, sassy, squirrel-chasing Westie named Selkie (#SelkieTheWestie).
+I live in the wine-growing region of Niagara (just across the lake from the city of Toronto) with my spouse (who's also an instructional designer) and a sweet, sassy, squirrel-chasing Westie named Selkie (#SelkieTheWestie).
