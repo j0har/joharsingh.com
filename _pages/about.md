@@ -51,9 +51,9 @@ image: /images/example-1.jpg
 
 Hi, I'm Johar (_rhymes with "go far"_). I'm a nerd with a sixth-sense for instructional design and a knack for solving training problems.
 
-I understand that people have less time and bandwidth to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
+I understand that people have less time to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
 
-That value won't come from continuing to deliver fast, cheap, and ubiquitous information. It comes from a more empathetic, efficient, and strategic approach to the design of training.
+That value won't come from continuing to deliver fast, cheap, and ubiquitous information. It comes from a more strategic and empathetic approach to the design of training.
 
 When you're ready to start designing learning differently, I can help. I offer a range of [strategic services](/services) that help build capability and improve performance outcomes.
 
@@ -79,6 +79,6 @@ Before my time in corporate L&D, I spent a decade as a nomadic adult educator an
 
 ### Personal Life
 
-When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming and comic book backlog.
+When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming and comic backlog.
 
 I live in the wine-growing region of Niagara (just across the lake from the city of Toronto) with my spouse (also an instructional designer) and a sweet, sassy, squirrel-chasing Westie named Selkie (#SelkieTheWestie).
