@@ -37,6 +37,9 @@ image: /images/example-1.jpg
   .about-banner { flex-direction: column; align-items: center; text-align: center; padding: 24px 28px; }
   .about-banner-icon { margin-top: 0; }
 }
+.cert-list {
+  padding-left: 24px;
+}
 </style>
 
 <div class="about-banner">
@@ -46,7 +49,7 @@ image: /images/example-1.jpg
   <p class="about-banner-text">I design user-friendly learning solutions that respect people's intelligence, reward their time, and help them build meaningful skills.</p>
 </div>
 
-Hi, I'm Johar (_rhymes with_ "Go far"). I'm a nerd with a sixth-sense for instructional design and a knack for solving training problems.
+Hi, I'm Johar (_rhymes with "go far"_). I'm a nerd with a sixth-sense for instructional design and a knack for solving training problems.
 
 I understand that people have less time and bandwidth to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
 
@@ -68,6 +71,7 @@ I have a BSc in Psychology and an MA in Curriculum Studies and Teacher Developme
 * Project Management Professional (PMP)®
 * Agile Certified Practitioner (PMI-ACP)®
 * Certified Professional in Managing AI (PMI-CPMAI)™
+{: .cert-list}
 
 Before my time in corporate L&D, I spent a decade as a nomadic adult educator and facilitator. I taught English at a University in South Korea, trained and certified yoga teachers internationally, and was once a local ambassador for Lululemon.
 
