@@ -51,7 +51,7 @@ image: /images/example-1.jpg
 
 Hi, I'm Johar (_rhymes with "go far"_). I'm a nerd with a sixth-sense for instructional design and a knack for solving training problems.
 
-I understand that people have less time to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
+I recognize that people have less time to develop the skills they need to succeed. So they need to get more value-per-minute from their learning experiences than ever before.
 
 That value won't come from continuing to deliver cheap and ubiquitous information. It comes from a more strategic and empathetic approach to the design of training.
 
