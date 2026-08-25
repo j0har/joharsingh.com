@@ -43,31 +43,38 @@ image: /images/example-1.jpg
   <div class="about-banner-icon">
     {% include icons/Business-Coaching-Idea-Jigsaw--Streamline-Freehand.svg %}
   </div>
-  <p class="about-banner-text">I design user-friendly learning solutions that build capability and improve performance outcomes.</p>
+  <p class="about-banner-text">I design user-friendly learning solutions that respect people's intelligence, reward their time, and help them build meaningful skills.</p>
 </div>
 
-Hi, I'm Johar. I'm a nerd with a sixth-sense for instructional design. I craft learning solutions that help people build meaningful skills.
+Hi, I'm Johar (_rhymes with_ "Go far"). I'm a nerd with a sixth-sense for instructional design and a knack for solving training problems.
 
-Most professionals prefer learning experiences that are practical, integrated, and personally meaningful. They don't have the time, focus, or bandwidth to consume the shallow, passive content that training usually serves.
+I understand that people have less time and bandwidth to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
 
-That's why I design solutions to fit into the rhythm and flow of professional work and target the skill gaps that make a measurable difference for professionals and the people they serve.
+That value won't come from continuing to deliver fast, cheap, and ubiquitous information. It comes from a more empathetic, efficient, and strategic approach to the design of training.
 
-To learn more about working with me, check out my [Services](/services) page.
+When you're ready to start designing learning differently, I can help. I offer a range of [strategic services](/services) that help build capability and improve performance outcomes.
 
 ---
 
 ### Background
 
-I'm a full-stack L&D professional with over a decade of experience managing the development of professional training in the occupational health and safety, healthcare, and social services sectors.
+I'm a full-stack L&D professional with over a decade of experience managing the end-to-end development of professional training in the occupational health and safety, healthcare, and social services sectors.
 
-I have a BSc in Psychology and a MA in Curriculum Studies and Teacher Development. I'm also a Certified Training and Development Professional (CTDP), Project Management Professional (PMP)® and Agile Certified Practitioner (PMI-ACP)®.
+I've developed accredited training in all formats (digital, hybrid, and instructor-led) across a variety of regulated industries, including pharmacy, child welfare, transportation, and construction.
 
-Before L&D, I spent a decade as a nomadic adult educator and facilitator. I taught ESL at a university in South Korea, trained and certified yoga teachers internationally, and was once an ambassador for Lululemon.
+I have a BSc in Psychology and an MA in Curriculum Studies and Teacher Development and hold the following professional designations:
+
+* Certified Training and Development Professional (CTDP)
+* Project Management Professional (PMP)®
+* Agile Certified Practitioner (PMI-ACP)®
+* Certified Professional in Managing AI (PMI-CPMAI)™
+
+Before my time in corporate L&D, I spent a decade as a nomadic adult educator and facilitator. I taught English at a University in South Korea, trained and certified yoga teachers internationally, and was once a local ambassador for Lululemon.
 
 ---
 
 ### Personal Life
 
-When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming backlog.
+When I'm not solving training puzzles, you'll find me hiking on the Niagara Escarpment, enjoying a cup of Japanese green tea, or catching up on my gaming and comic book backlog.
 
-I live in the wine-growing region of Niagara with my spouse (also an instructional designer) and a sweet, sassy, squirrel-chasing Westie named Selkie (#SelkieTheWestie).
+I live in the wine-growing region of Niagara (just across the lake from the city of Toronto) with my spouse (also an instructional designer) and a sweet, sassy, squirrel-chasing Westie named Selkie (#SelkieTheWestie).
