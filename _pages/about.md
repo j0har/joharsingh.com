@@ -53,7 +53,7 @@ Hi, I'm Johar (_rhymes with "go far"_). I'm a nerd with a sixth-sense for instru
 
 I understand that people have less time to develop the skills they need to succeed. They need to get more value-per-minute from their learning experiences than ever before.
 
-That value won't come from continuing to deliver fast, cheap, and ubiquitous information. It comes from a more strategic and empathetic approach to the design of training.
+That value won't come from continuing to deliver cheap and ubiquitous information. It comes from a more strategic and empathetic approach to the design of training.
 
 When you're ready to start designing learning differently, I can help. I offer a range of [strategic services](/services) that help build capability and improve performance outcomes.
 
