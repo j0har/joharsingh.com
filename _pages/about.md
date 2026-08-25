@@ -63,7 +63,7 @@ When you're ready to start designing learning differently, I can help. I offer a
 
 I'm a full-stack L&D professional with over a decade of experience managing the end-to-end development of professional training in the occupational health and safety, healthcare, and social services sectors.
 
-I've developed accredited training in all formats (digital, hybrid, and instructor-led) across a variety of regulated industries, including pharmacy, child welfare, transportation, and construction.
+I've developed accredited training in all formats (digital, hybrid, and instructor-led) across a variety of regulated industries, including pharmacy, child welfare, transportation, utilities, and construction.
 
 I have a BSc in Psychology and an MA in Curriculum Studies and Teacher Development and hold the following professional designations:
 
