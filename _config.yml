@@ -15,12 +15,6 @@ plugins:
 paginate: 6
 paginate_path: "/page/:num"
 
-# Stale Simplier-theme leftovers, kept in the repo but dropped from the
-# build -- superseded by _pages/blog.md and _pages/projects.md
-exclude:
-  - blog/index.html
-  - projects/index.html
-
 
 #-------------------------------
 # Collections
