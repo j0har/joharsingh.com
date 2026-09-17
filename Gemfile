@@ -1,1 +1,3 @@
-c291cmNlICdodHRwczovL3J1YnlnZW1zLm9yZycKZ2VtICJnaXRodWItcGFnZXMiLCBncm91cDogOmpla3lsbF9wbHVnaW5zCmdlbSAiYnVuZGxlciIK
+source 'https://rubygems.org'
+gem "github-pages", group: :jekyll_plugins
+gem "bundler"

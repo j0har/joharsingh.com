@@ -5,7 +5,7 @@ meta_title: Blog — Johar Singh
 permalink: /blog/
 meta_description: Come and nerd out about the practical applications of learning science and interactive instructional design.
 description: This is where I nerd out about the practical applications of learning science and interactive design.
-hero_image: '/images/18.webp'
+hero_image: '/images/Selkie-background.webp'
 wide: true
 ---
 

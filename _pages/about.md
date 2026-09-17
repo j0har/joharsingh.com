@@ -4,7 +4,7 @@ title: About
 meta_title: About — Johar Singh
 permalink: /about/
 meta_description: I'm a nerd with a sixth-sense for instructional design and a knack for creating targeted training solutions.
-image: /images/example-1.jpg
+hero_image: '/images/Selkie-background.webp'
 ---
 
 <style>
