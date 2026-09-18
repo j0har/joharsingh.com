@@ -4,7 +4,8 @@
   text-align: center;
 
   &__image {
-    max-width: 360px;
+    width: 70%;
+    max-width: 640px;
     margin: 0 auto ($base-spacing-unit * 2);
 
     img {
@@ -14,22 +15,13 @@
     }
   }
 
-  &__title {
-    margin-bottom: $base-spacing-unit;
-    font-size: $font-size-h1;
-  }
-
   &__text {
     max-width: 480px;
     margin: 0 auto ($base-spacing-unit * 2);
     color: var(--text-alt-color);
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: $mobile) {
     padding: ($base-spacing-unit * 3) 0;
-
-    &__image {
-      max-width: 260px;
-    }
   }
 }
