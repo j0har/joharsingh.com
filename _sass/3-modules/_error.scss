@@ -1,15 +1,39 @@
 /* Error / 404 */
+
+// This page's H1 ("404") is the whole point of the page, not a document
+// title — scale it up well past the shared .page-title size (used by
+// every other page's article heading) and tighten the space under it so
+// it reads as one connected graphic with the image below, not two
+// separate blocks. Scoped to this page only via body:has(.error).
+body:has(.error) .page-title {
+  margin-bottom: 0;
+  font-size: 160px;
+
+  @media (max-width: $desktop) {
+    font-size: 120px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 90px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 64px;
+  }
+}
+
 .error {
-  padding: ($base-spacing-unit * 6) 0;
+  padding: ($base-spacing-unit * 1.5) 0 ($base-spacing-unit * 4);
   text-align: center;
 
   &__image {
-    width: 88%;
-    max-width: 860px;
+    width: 92%;
     margin: 0 auto ($base-spacing-unit * 2);
 
     img {
       display: block;
+      width: 100%;
+      height: auto;
       margin: 0 auto;
       filter: drop-shadow(0 24px 32px rgba(0, 0, 0, .18));
     }
@@ -22,6 +46,6 @@
   }
 
   @media (max-width: $mobile) {
-    padding: ($base-spacing-unit * 3) 0;
+    padding: $base-spacing-unit 0 ($base-spacing-unit * 2);
   }
 }
