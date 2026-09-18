@@ -1,0 +1,35 @@
+/* Error / 404 */
+.error {
+  padding: ($base-spacing-unit * 6) 0;
+  text-align: center;
+
+  &__image {
+    max-width: 360px;
+    margin: 0 auto ($base-spacing-unit * 2);
+
+    img {
+      display: block;
+      margin: 0 auto;
+      filter: drop-shadow(0 24px 32px rgba(0, 0, 0, .18));
+    }
+  }
+
+  &__title {
+    margin-bottom: $base-spacing-unit;
+    font-size: $font-size-h1;
+  }
+
+  &__text {
+    max-width: 480px;
+    margin: 0 auto ($base-spacing-unit * 2);
+    color: var(--text-alt-color);
+  }
+
+  @media (max-width: $tablet) {
+    padding: ($base-spacing-unit * 3) 0;
+
+    &__image {
+      max-width: 260px;
+    }
+  }
+}
