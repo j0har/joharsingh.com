@@ -17,7 +17,7 @@ wide: true
       {% if project.image %}
       <div class="project__head">
         <div class="project__image">
-          <img class="lazy" data-src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.title }}">
+          <img class="lazy" data-src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.image_alt | default: project.title }}">
         </div>
       </div>
       {% endif %}
