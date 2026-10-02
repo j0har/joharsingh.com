@@ -33,9 +33,12 @@ Based on these observations, the skill gap to target in this area of AI literacy
 ---
 
 ## The Solution
-In order to target the skill gap at a time of need, the solution is designed to integrate into the flow of work. It's set up to be deployed in a campaign format with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf). The poster previews the mental model and also serves as a takeaway job aid.
+In order to target the skill gap at a time of need, the solution is designed to integrate into the flow of work. It's set up to be deployed in a campaign format with [a PDF poster to tease the topic and direct employees to it, via a QR code](https://j0har.github.io/jagged-frontier/jf-job-aid.pdf){:target="_blank" rel="noopener"} (opens in a new tab). The poster previews the mental model and also serves as a takeaway job aid.
 
-<img src="{{ '/images/jagged-frontier-job-aid.webp' | relative_url }}" alt="Jagged Frontier job aid poster" width="745">
+<a href="https://j0har.github.io/jagged-frontier/jf-job-aid.pdf" target="_blank" rel="noopener">
+  <img src="{{ '/images/jagged-frontier-job-aid.webp' | relative_url }}" alt="Jagged Frontier job aid poster: 'If AI gets it wrong, would you know?'" width="745">
+  <span style="display:block;margin-top:8px;">Open the job aid (PDF, opens in a new tab)</span>
+</a>
 
 This decision bypasses typical administrative friction by being accessible without a login or any LMS dependency. But in doing so, it neglects to track typical performance metrics, such as completion rates or test scores. Instead, the focus is on targeting AI literacy and critical thinking skills that cannot be quantified through those typical metrics.
 
