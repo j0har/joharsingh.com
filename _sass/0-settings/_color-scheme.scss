@@ -1,8 +1,11 @@
 /* Color Scheme — Johar Singh brand palette */
 
 :root {
+  color-scheme: only light;
+
   /* Brand tokens */
   --color-primary:       #3D1F24; /* Deep Burgundy */
+  --color-primary-hover: #5C2F36; /* Fill behind off-white text on hover */
   --color-body:          #2C2825; /* Warm Charcoal */
   --color-accent:        #B8722A; /* Copper-Gold */
   --color-bg:            #F5F2EF; /* Warm Off-White */
@@ -37,12 +40,12 @@
   --heading-font-color:        var(--color-primary);
 
   --link-color:                var(--color-body);
-  --link-color-hover:          var(--color-accent);
+  --link-color-hover:          var(--color-primary);
 
   --button-color:              var(--color-bg);
   --button-color-hover:        var(--color-bg);
-  --button-background-color:   var(--color-body);
-  --button-background-hover:   var(--color-accent);
+  --button-background-color:   var(--color-primary);
+  --button-background-hover:   var(--color-primary-hover);
 
   --border-color:              var(--color-bg-secondary);
   --border-color-alt:          var(--color-bg-secondary);
@@ -51,50 +54,4 @@
   --tr-color:                  var(--color-bg-secondary);
 
   --syntax-highlighting-background: var(--color-bg-secondary);
-}
-
-:root[dark] {
-  /* Dark mode — charcoal base, warm adjustments */
-  --color-bg:            #2C2825; /* Warm Charcoal as dark background */
-  --color-bg-secondary:  #3A3430; /* Slightly lighter charcoal for cards */
-  --color-body:          #ECE7E1; /* Warm Sand as dark mode body text */
-  --color-label:         #A39C98; /* Muted gray for secondary text — lightened from #9A9490 to clear 4.5:1 AA against the dark card */
-  --color-accent:        #B8722A; /* Copper-Gold unchanged */
-  --color-primary:       #F5F2EF; /* Off-white for headings on dark */
-
-  --primary-color:             var(--color-accent);
-  --secondary-color:           #C8A882;
-  --accent-color:              var(--color-accent);
-  --white:                     #ECE7E1;
-  --light-gray:                #9A9490;
-  --gray:                      #9A9490;
-  --dark:                      #2C2825;
-  --rgb-image-color:           44, 40, 37;                 /* charcoal as RGB */
-
---image-gradient: linear-gradient(180deg, rgba(var(--rgb-image-color), 0.6), rgba(var(--rgb-image-color), 1));
-
-  --text-gradient: none;
-
-  --background-color:          #2C2825;
-  --background-alt-color:      #3A3430;
-
-  --text-color:                #ECE7E1;
-  --text-alt-color:            #9A9490;
-
-  --heading-font-color:        #F5F2EF;
-
-  --link-color:                #ECE7E1;
-  --link-color-hover:          var(--color-accent);
-
-  --button-color:              #2C2825;
-  --button-background-color:   #ECE7E1;
-  --button-background-hover:   var(--color-accent);
-
-  --border-color:              #3A3430;
-  --border-color-alt:          #3A3430;
-
-  --th-color:                  #3A3430;
-  --tr-color:                  #3A3430;
-
-  --syntax-highlighting-background: #3A3430;
 }

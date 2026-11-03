@@ -1,17 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
   'use strict';
 
-  var html = document.querySelector('html'),
-    body = document.querySelector("body"),
+  var body = document.querySelector("body"),
     menuToggle = document.querySelector(".hamburger"),
     menuList = document.querySelector(".main-nav"),
-    toggleTheme = document.querySelector(".toggle-theme-js"),
-    toggleTheme = document.querySelector(".toggle-theme"),
     btnScrollToTop = document.querySelector(".top");
 
 
   /* =======================================================
-  // Menu + Theme Switcher
+  // Menu
   ======================================================= */
   menuToggle.addEventListener("click", () => {
     menu();
@@ -25,31 +22,11 @@ document.addEventListener("DOMContentLoaded", function() {
     menuList.classList.remove("is-open");
   }
 
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
-
 
   // Menu
   function menu() {
     menuToggle.classList.toggle("is-open");
     menuList.classList.toggle("is-visible");
-  }
-
-
-  // Theme Switcher
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
-      document.documentElement.removeAttribute("dark");
-    } else {
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.setAttribute("dark", "");
-    }
   }
 
 
@@ -62,26 +39,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   /* ================================================================
-  // Stop Animations During Window Resizing and Switching Theme Modes
+  // Stop Animations During Window Resizing
   ================================================================ */
   let disableTransition;
 
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      stopAnimation();
-    });
+  window.addEventListener("resize", () => {
+    stopAnimation();
+  });
 
-    window.addEventListener("resize", () => {
-      stopAnimation();
-    });
-
-    function stopAnimation() {
-      document.body.classList.add("disable-animation");
-      clearTimeout(disableTransition);
-      disableTransition = setTimeout(() => {
-        document.body.classList.remove("disable-animation");
-      }, 100);
-    }
+  function stopAnimation() {
+    document.body.classList.add("disable-animation");
+    clearTimeout(disableTransition);
+    disableTransition = setTimeout(() => {
+      document.body.classList.remove("disable-animation");
+    }, 100);
   }
 
 

@@ -34,24 +34,9 @@
   transition: color .25s ease;
 }
 
-.logo__image,
-.logo__image__dark {
+.logo__image {
   max-height: 50px;
   width: auto;
-}
-
-.logo__image__dark {
-  display: none;
-}
-
-.dark-mode {
-  .logo__image {
-    display: none;
-  }
-
-  .logo__image__dark {
-    display: block;
-  }
 }
 
 /* Nav */
@@ -156,14 +141,6 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-}
-
-.dark-mode {
-  @media (max-width: $desktop) {
-    .main-nav {
-      background-color: var(--background-alt-color);
-    }
   }
 }
 
@@ -299,16 +276,6 @@
       &::before {
         top: 0;
       }
-    }
-  }
-}
-
-.dark-mode {
-  .dropdown-menu {
-    background-color: var(--background-alt-color);
-
-    @media (max-width: $desktop) {
-      background-color: inherit;
     }
   }
 }

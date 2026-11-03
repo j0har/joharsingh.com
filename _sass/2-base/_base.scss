@@ -163,7 +163,7 @@ img,
 
       &:hover {
         color: var(--link-color);
-        border-color: var(--link-color-hover);
+        border-color: var(--accent-color);
       }
     }
   }
@@ -186,7 +186,7 @@ a {
 
   &:hover {
     color: var(--link-color-hover);
-    border-bottom-color: var(--link-color-hover);
+    border-bottom-color: var(--accent-color);
   }
 }
 
