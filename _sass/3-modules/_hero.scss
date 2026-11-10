@@ -44,9 +44,10 @@
 
   .hero__title {
     margin-bottom: 32px;
-    font-size: 93px;
-    line-height: 1;
-    font-weight: 400;
+    font-size: var(--fs-display);
+    line-height: var(--lh-display);
+    letter-spacing: var(--ls-display);
+    font-weight: var(--fw-display-reg);
     color: var(--heading-font-color);
   
     span {
@@ -91,16 +92,9 @@
     }
   }
 
-  @media (max-width: $wide) {
-    .hero__title {
-      font-size: 88px;
-    }
-  }
-
   @media (max-width: $desktop) {
     .hero__title {
       margin-bottom: 20px;
-      font-size: 62px;
     }
 
     .hero__description {
@@ -109,10 +103,6 @@
   }
 
   @media (max-width: $tablet) {
-    .hero__title {
-      font-size: 50px;
-    }
-
     .hero__description {
       font-size: inherit;
     }
@@ -128,10 +118,6 @@
 
   @media (max-width: $mobile) {
     text-align: left;
-
-    .hero__title {
-      font-size: 40px;
-    }
 
     .hero__buttons {
       justify-content: flex-start;

@@ -110,7 +110,7 @@
               &::before {
                 opacity: 1;
                 visibility: visible;
-                background-color: var(--primary-color);
+                background-color: var(--color-accent);
               }
             }
           }
@@ -199,7 +199,7 @@
         &::before {
           opacity: 1;
           visibility: visible;
-          background-color: var(--primary-color);
+          background-color: var(--color-accent);
         }
       }
 
@@ -269,7 +269,7 @@
         &::before {
           opacity: 1;
           visibility: visible;
-          background-color: var(--primary-color);
+          background-color: var(--color-accent);
         }
       }
 

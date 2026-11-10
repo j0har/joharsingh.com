@@ -18,22 +18,11 @@
     color: var(--color-label);
   }
 
-  .project-info__title {
-    font-size: 62px;
-  }
-
-  @media (max-width: $tablet) {
-    .project-info__title {
-      font-size: 50px;
-    }
-  }
-
   @media (max-width: $mobile) {
     text-align: left;
 
     .project-info__title {
       margin-bottom: 20px;
-      font-size: 36px;
     }
   }
 }
@@ -67,15 +56,6 @@
 .project-content {
   color: var(--text-color);
   margin-bottom: 80px;
-
-a {
-    font-weight: 500;
-    border-bottom: 1px solid var(--link-color);
-    &:hover {
-      color: var(--link-color-hover);
-      border-bottom-color: var(--link-color-hover);
-    }
-  }
 
   img, .js-reframe {
     border-radius: 12px;

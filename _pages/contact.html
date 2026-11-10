@@ -15,15 +15,15 @@ hero_image: '/images/Selkie-background.webp'
   </div>
   <form class="form" action="{% if site.data.settings.contact.formspree_id %}https://formspree.io/f/{{site.data.settings.contact.formspree_id}}{% else %}#{% endif %}" method="POST">
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+      <label class="form__label screen-reader-text" for="form-name">Your name</label>
       <input class="form__input" id="form-name" type="text" name="name" placeholder="Name" required>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+      <label class="form__label screen-reader-text" for="form-email">Your email</label>
       <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email" required>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-service">Service Sought</label>
+      <label class="form__label screen-reader-text" for="form-service">Service sought</label>
       <select class="form__input" id="form-service" name="service_sought">
         <option value="">Service sought (optional)</option>
         <option value="Learning Consult">Learning Consult</option>
@@ -44,7 +44,7 @@ hero_image: '/images/Selkie-background.webp'
       </select>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-budget">Budget Range</label>
+      <label class="form__label screen-reader-text" for="form-budget">Budget range</label>
       <select class="form__input" id="form-budget" name="budget">
         <option value="">Budget range (optional)</option>
         <option value="Under $2K">Under $2K</option>
@@ -54,12 +54,12 @@ hero_image: '/images/Selkie-background.webp'
       </select>
     </div>
     <div class="form__group">
-      <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+      <label class="form__label screen-reader-text" for="form-text">Your message</label>
       <textarea class="form__input" id="form-text" name="text" rows="8" placeholder="Message" required></textarea>
     </div>
     <input type="text" name="_gotcha" style="display:none">
     <div class="form__group">
-      <button class="button" type="submit">Send Message</button>
+      <button class="button" type="submit">Send message</button>
     </div>
   </form>
 </div>

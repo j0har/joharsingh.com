@@ -41,8 +41,8 @@ hero:
   hero_title: '<em class="hero__title__accent">Outcome-oriented</em> learning solutions.'
   hero_description: I design learning experiences that respect your intelligence, reward your time, and help you build meaningful skills.
   hero_image: "/images/Selkie-background.webp"
-  hero_button_contact: Get in Touch
-  hero_button_about: About Me
+  hero_button_contact: Get in touch
+  hero_button_about: About me
 
 
 #-------------------------------
@@ -58,12 +58,12 @@ section_testimonials:
 
 #-------------------------------
 # Blog Section
-section_blog_title: Blog Posts
+section_blog_title: Blog posts
 
 
 #-------------------------------
 # Tags Section
-section_tags_title: Explore Topics
+section_tags_title: Explore topics
 
 
 #-------------------------------

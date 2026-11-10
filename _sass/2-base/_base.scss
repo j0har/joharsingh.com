@@ -4,8 +4,8 @@
 
 body {
   font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
   overflow-x: hidden;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -29,17 +29,13 @@ body {
     height: 100%;
     background: var(--background-color);
     z-index: 15;
-    transition: 1s;
+    transition: opacity var(--dur-reveal) var(--ease-standard), visibility var(--dur-reveal) var(--ease-standard);
   }
 
   &.disable-animation {
     *, *::after, *::before {
       transition: none !important;
     }
-  }
-
-  @media (max-width: $mobile) {
-    font-size: 16px;
   }
 }
 
@@ -57,15 +53,22 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-h1;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
 }
 
 h2 {
-  font-size: $font-size-h2;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
 }
 
 h3 {
-  font-size: $font-size-h3;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-display-reg);
+  color: var(--color-body);
 }
 
 h4 {
@@ -96,7 +99,7 @@ blockquote {
     z-index: -1;
     font-size: 4.5em;
     line-height: 0;
-    color: var(--primary-color);
+    color: var(--color-accent);
   }
 
   p {
@@ -110,7 +113,6 @@ blockquote {
     font-size: 12px;
     line-height: 1;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-style: normal;
     color: var(--text-alt-color);
@@ -158,35 +160,28 @@ img,
 
     a {
       font-weight: 700;
-      border-bottom: 1px solid var(--border-color);
-      transition: $global-transition;
-
-      &:hover {
-        color: var(--link-color);
-        border-color: var(--accent-color);
-      }
+      text-decoration-color: var(--color-accent);
     }
   }
 }
 
+// Standalone links: no underline at rest; hover turns burgundy with a copper underline (DESIGN → Links).
 a {
-  text-decoration: none;
   color: var(--link-color);
-  transition: $global-transition;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--dur-hover) var(--ease-standard), text-decoration-color var(--dur-hover) var(--ease-standard);
 
   &:hover {
     color: var(--link-color-hover);
+    text-decoration-color: var(--color-accent);
   }
-}
 
-.page__content a,
-.post__content a {
-  font-weight: 500;
-  border-bottom: 1px solid var(--link-color);
-
-  &:hover {
-    color: var(--link-color-hover);
-    border-bottom-color: var(--accent-color);
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
   }
 }
 

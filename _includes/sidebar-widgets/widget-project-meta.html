@@ -1,5 +1,5 @@
 <div class="widget-sidebar project-meta">
-  <h2 class="widget-sidebar__title">Project Details</h2>
+  <h2 class="widget-sidebar__title">Project details</h2>
   {% if page.summary %}
   <p class="project-meta__summary">{{ page.summary }}</p>
   {% endif %}
@@ -17,11 +17,11 @@
   {% endif %}
   {% if page.tools %}
   <div class="project-meta__item">
-    <h3 class="project-meta__name">Made With</h3>
+    <h3 class="project-meta__name">Made with</h3>
     <div class="project-meta__text">{{ page.tools }}</div>
   </div>
   {% endif %}
   {% if page.demo_url %}
-  <a href="{{ page.demo_url }}" class="button button--middle project-meta__cta" target="_blank" rel="noopener">Launch Demo</a>
+  <a href="{{ page.demo_url }}" class="button button--middle project-meta__cta" target="_blank" rel="noopener">Launch demo</a>
   {% endif %}
 </div>

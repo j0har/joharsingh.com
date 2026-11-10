@@ -48,6 +48,7 @@
   .subscribe__title {
     margin-bottom: 0;
     font-size: 48px;
+    font-weight: var(--fw-display);
     color: var(--white);
   }
 
@@ -73,7 +74,7 @@
       transition: all .25s ease;
 
       &:focus {
-        box-shadow: 0 0 0 1px transparent, 0 0 0 1.5px var(--primary-color);
+        box-shadow: 0 0 0 1px transparent, 0 0 0 1.5px var(--color-accent);
       }
 
       &::placeholder {

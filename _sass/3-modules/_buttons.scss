@@ -1,17 +1,18 @@
 /* Buttons */
 .button {
   display: inline-block;
-  padding: 20px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1;
+  padding: 10px 20px;
+  font-family: $base-font-family;
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-ui);
   text-decoration: none;
-  border-radius: 60px;
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
   outline: none;
   cursor: pointer;
-  will-change: transform;
-  transition: all .2s;
+  transition: color var(--dur-hover) var(--ease-standard), background-color var(--dur-hover) var(--ease-standard), border-color var(--dur-hover) var(--ease-standard), opacity var(--dur-hover) var(--ease-standard);
   color: var(--button-color);
   background: var(--button-background-color);
 
@@ -21,33 +22,32 @@
   }
 
   &:hover {
-    transform: scale(1.05);
     color: var(--button-color-hover);
     background: var(--button-background-hover);
   }
 
+  &:active {
+    opacity: 0.85;
+  }
+
   &--secondary {
-    border: 1px solid var(--button-background-color);
-    color: var(--button-background-color);
+    border-color: var(--color-border);
+    color: var(--color-body);
     background: transparent;
 
     &:hover {
-      border-color: var(--button-background-hover);
-      color: var(--button-background-hover);
+      border-color: var(--color-accent);
+      color: var(--color-body);
       background: transparent;
     }
   }
 
   &--middle {
-    padding: 20px 40px;
+    padding: 10px 32px;
   }
 
   &--big {
     display: block;
     width: 100%;
-  }
-
-  @media (max-width: $tablet) {
-    font-size: 16px;
   }
 }

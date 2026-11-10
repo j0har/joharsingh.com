@@ -1,22 +1,10 @@
-// Custom brand overrides
-// Links in page and post content
-
-.page__content,
-.post__content {
-  a {
-    color: var(--heading-font-color);
-    text-decoration: underline;
-    text-decoration-color: var(--color-primary);
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-    font-weight: inherit;
-    transition: color 0.2s ease, text-decoration-color 0.2s ease;
-
-    &:hover {
-      color: var(--color-primary);
-      text-decoration-color: var(--color-accent);
-    }
-  }
+// Links in running text keep a copper underline at rest, so they read as links by more than colour (DESIGN → Links).
+// A bare URL breaks anywhere, so a long reference link can't widen the page at 320px.
+.page__content a,
+.post__content a,
+.project-content a {
+  text-decoration-color: var(--color-accent);
+  overflow-wrap: anywhere;
 }
 
 // Page header: center title and description on archive/listing pages
@@ -49,4 +37,14 @@
 
 .page--wide {
   max-width: none;
+}
+
+// The one reduced-motion rule (DESIGN → Motion), the same on the site and in the design system.
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

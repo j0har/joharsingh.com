@@ -98,5 +98,5 @@ hero_image: '/images/Selkie-background.webp'
 
 <div class="services-cta">
   <p>Contact me to learn more about elevating learning outcomes for your people.</p>
-  <a href="/contact/" class="button">Get in touch</a>
+  <a href="{{ '/contact/' | relative_url }}" class="button">Get in touch</a>
 </div>

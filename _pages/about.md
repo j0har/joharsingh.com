@@ -55,7 +55,7 @@ I recognize that people have less time and bandwidth to develop the skills they 
 
 That value won't come from continuing to deliver cheap and ubiquitous information. It comes from a more strategic and efficient approach to the design of training.
 
-When you're ready to start designing learning differently, I can help. I offer a range of [strategic services](/services) that help build capability and improve performance outcomes.
+When you're ready to start designing learning differently, I can help. I offer a range of [strategic services]({{ '/services/' | relative_url }}) that help build capability and improve performance outcomes.
 
 ---
 

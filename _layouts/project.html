@@ -25,14 +25,14 @@ layout: default
         <div class="project__nav">
           <div class="project__prev">
             <div class="project__box">
-              <span class="project__nav-info">Next Project</span>
+              <span class="project__nav-info">Next project</span>
               <h2 class="project__nav-title">
-                <a href="{{page.previous.url}}" class="project__nav-link">{{page.previous.title}}</a>
+                <a href="{{ page.previous.url | relative_url }}" class="project__nav-link">{{page.previous.title}}</a>
               </h2>
             </div>
           </div>
-          <a class="project__nav-image" href="{{page.previous.url}}">
-            <img class="lazy" data-src="{{page.previous.image}}" alt="{{ page.previous.image_alt | default: page.previous.title }}">
+          <a class="project__nav-image" href="{{ page.previous.url | relative_url }}">
+            <img class="lazy" data-src="{{ page.previous.image | relative_url }}" alt="{{ page.previous.image_alt | default: page.previous.title }}">
           </a>
         </div>
         {% endif %}

@@ -1,34 +1,86 @@
-/* Color Scheme — Johar Singh brand palette */
+// Brand tokens and the theme's colour names.
+// The two :root blocks are copied unchanged from the design system's tokens.css
+// (generated there from tokens.json). Change a value in tokens.json, then copy
+// the blocks again: never edit a value here (DESIGN.md → Changing the System).
 
+:root, [data-theme="light"] {
+  --color-primary: #3d1f24;
+  --color-primary-hover: #5c2f36;
+  --color-body: #2c2825;
+  --color-accent: #b8722a;
+  --color-bg: #f5f2ef;
+  --color-bg-secondary: #ece7e1;
+  --color-link: #2c2825;
+  --color-link-hover: #3d1f24;
+  --color-muted: #9a9490;
+  --color-label: #69635e;
+  --color-border: #ddd9d4;
+  --color-dark-bg: #3d1f24;
+  --color-dark-text: #f5f2ef;
+  --color-bleed-dark: var(--color-primary-hover);
+  --color-error: #6e2f28;
+  --color-success: #6b7d52;
+  --color-field-border: var(--color-label);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --space-8: 128px;
+  --max-prose: 680px;
+  --max-content: 1100px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --fs-display: clamp(40px, 21.3px + 4.98vw, 93px);
+  --fs-h1: clamp(40px, 6vw, 64px);
+  --fs-h2: clamp(32px, 4vw, 40px);
+  --fs-h3: clamp(24px, 3vw, 28px);
+  --fs-tagline: clamp(24px, 3vw, 32px);
+  --fs-body: clamp(16px, 1.5vw, 18px);
+  --fs-ui: 15px;
+  --fs-message: 14px;
+  --fs-small: 13px;
+  --fw-display: 700;
+  --fw-display-reg: 400;
+  --fw-body: 400;
+  --fw-body-med: 500;
+  --lh-display: 1.1;
+  --lh-heading: 1.25;
+  --lh-body: 1.65;
+  --lh-ui: 1.4;
+  --ls-display: -0.02em;
+  --ls-heading: -0.01em;
+  --ls-ui: 0.01em;
+  --ls-small: 0.04em;
+  --dur-hover: 150ms;
+  --dur-reveal: 300ms;
+  --ease-standard: ease-out;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+// The theme's own variable names, each pointing at a brand token. "Primary" is
+// burgundy, as in the brand; anything copper reads --color-accent.
 :root {
   color-scheme: only light;
 
-  /* Brand tokens */
-  --color-primary:       #3D1F24; /* Deep Burgundy */
-  --color-primary-hover: #5C2F36; /* Fill behind off-white text on hover */
-  --color-body:          #2C2825; /* Warm Charcoal */
-  --color-accent:        #B8722A; /* Copper-Gold */
-  --color-bg:            #F5F2EF; /* Warm Off-White */
-  --color-bg-secondary:  #ECE7E1; /* Warm Sand */
-  --color-label:         #69635E; /* Label Gray — AA-compliant small text on light surfaces */
-  --color-muted:         #9A9490; /* Warm Muted Gray — dark backgrounds and decorative only */
-
-  /* Semantic aliases — mapped to brand tokens */
-  --primary-color:             var(--color-accent);        /* copper-gold as interactive primary */
-  --secondary-color:           var(--color-primary);       /* burgundy as secondary */
+  --primary-color:             var(--color-primary);
+  --secondary-color:           var(--color-primary);
   --accent-color:              var(--color-accent);
-  --white:                     #F5F2EF;                    /* warm off-white, never pure white */
+  --white:                     var(--color-bg);
   --light-gray:                var(--color-bg-secondary);
-  --light-blue:                var(--color-bg-secondary);  /* theme alias, mapped to warm sand */
+  --light-blue:                var(--color-bg-secondary);
   --blue-gray:                 var(--color-label);
   --gray:                      var(--color-label);
   --dark:                      var(--color-body);
   --dark-blue:                 var(--color-primary);
-  --rgb-image-color:           245, 242, 239;              /* warm off-white as RGB for gradients */
 
---image-gradient: linear-gradient(180deg, rgba(var(--rgb-image-color), 0.6), rgba(var(--rgb-image-color), 1));
-
-  /* No text gradient — not used in this brand */
+  --image-gradient: linear-gradient(180deg, color-mix(in srgb, var(--color-bg) 60%, transparent), var(--color-bg));
   --text-gradient: none;
 
   --background-color:          var(--color-bg);
@@ -39,15 +91,15 @@
 
   --heading-font-color:        var(--color-primary);
 
-  --link-color:                var(--color-body);
-  --link-color-hover:          var(--color-primary);
+  --link-color:                var(--color-link);
+  --link-color-hover:          var(--color-link-hover);
 
-  --button-color:              var(--color-bg);
-  --button-color-hover:        var(--color-bg);
+  --button-color:              var(--color-dark-text);
+  --button-color-hover:        var(--color-dark-text);
   --button-background-color:   var(--color-primary);
   --button-background-hover:   var(--color-primary-hover);
 
-  --border-color:              var(--color-bg-secondary);
+  --border-color:              var(--color-border);
   --border-color-alt:          var(--color-bg-secondary);
 
   --th-color:                  var(--color-bg-secondary);
