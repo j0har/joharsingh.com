@@ -34,14 +34,14 @@
   transition: color .25s ease;
 }
 
-// logo.svg is outlined at 100 units per em, so its height is 0.903 of the logo size: 36px for the 40px nav logo, 29px for 32px (DESIGN → Logo Mark).
+// logo.svg is outlined at 100 units per em and its viewBox holds the descenders, so its height is 1.091 of the logo size: 44px for the 40px nav logo, 35px for 32px (DESIGN → Logo Mark).
 .logo__image {
   display: block;
   width: auto;
-  height: 36px;
+  height: 44px;
 
   @media (max-width: 600px) {
-    height: 29px;
+    height: 35px;
   }
 }
 
