@@ -56,7 +56,9 @@
       -webkit-text-fill-color: transparent;
     }
 
+    // The accent phrase holds its own line, so wide screens can't strand "solutions." on a line of its own.
     .hero__title__accent {
+      display: block;
       font-style: italic;
       color: var(--color-accent);
     }
