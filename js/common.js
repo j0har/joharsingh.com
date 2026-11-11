@@ -18,10 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
+  // The open menu covers the page, so the page behind it leaves the tab order and stops scrolling until it closes.
+  var pageBehindMenu = document.querySelectorAll("body > :not(.header):not(script)");
+
   function setMenuOpen(open) {
     menuToggle.setAttribute("aria-expanded", String(open));
     menuList.classList.toggle("is-visible", open);
+    document.documentElement.classList.toggle("menu-open", open);
+    pageBehindMenu.forEach(function (el) {
+      el.inert = open;
+    });
   }
+
+  // Past the desktop breakpoint the nav is always shown, so an open menu has to release the page.
+  window.matchMedia("(min-width: 1025px)").addEventListener("change", function (event) {
+    if (event.matches) setMenuOpen(false);
+  });
 
 
   // is-in lifts the page-load cover once the first frame has painted.

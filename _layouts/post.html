@@ -3,62 +3,47 @@ layout: default
 ---
 
 <div class="container">
-  <div class="post-head">
+  <article class="post-page" aria-labelledby="post-title">
 
-    <div class="post-info">
+    <header class="post-head">
+      {% if page.tags.size >= 1 %}
+      <ul class="tag-list post-tags" aria-label="Tags">
+        {% for tag in page.tags %}
+        <li><a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
 
-      <div class="post-meta">
-        {% if page.tags.size >= 1 %}
-        <ul class="tag-list post-tags" aria-label="Tags">
-          {% for tag in page.tags %}
-          <li><a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a></li>
-          {% endfor %}
-        </ul>
-        {% endif %}
-        <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-B, %Y" %}{{ page.date | date: date_format }}</time> /
-        <a href="{{site.baseurl}}/about/" class="post-author">{{site.data.settings.author_name}}</a> /
-        <span class="post-minutes">
-          {% assign words = page.content | number_of_words %}
-          {% if words < 360 %}1 min read {% else %}{{ words | divided_by:180 }} min read {% endif %}
-        </span>
-      </div>
-
-      <h1 class="post-title">{{ page.title | escape }}</h1>
+      <h1 class="post-title" id="post-title">{{ page.title | escape }}</h1>
 
       {% if page.description %}
       <p class="post-description">{{ page.description }}</p>
       {% endif %}
 
-    </div>
+      {% assign date_format = site.minima.date_format | default: "%d %-B, %Y" %}{% assign words = page.content | number_of_words %}
+      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: date_format }}</time> · {% if words < 360 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read</p>
+    </header>
 
     {% if page.image %}
     <div class="post-image">
-      <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
+      <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="">
     </div>
     {% if page.image_caption %}
     <div class="post-image-caption">{{ page.image_caption | markdownify | replace: '<p>' | replace: '</p>' }}</div>
     {% endif %}
     {% endif %}
 
-  </div>
-</div>
-
-<!-- begin post -->
-<div class="container">
-
-  <article class="post">
-
     <div class="post__content">
       {{ content }}
     </div>
 
-    {% include share-buttons.html %}
-
-    {% include post-navigation.html %}
+    <footer class="post-foot">
+      {% include share-link.html %}
+      {% include post-navigation.html %}
+    </footer>
 
   </article>
 </div>
-<!-- end post -->
 
 {% include related-posts.html %}
 

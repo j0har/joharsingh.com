@@ -71,6 +71,15 @@ h3 {
   color: var(--color-body);
 }
 
+// An element that isn't an H3 but reads as one, such as a box title kept at H2 for the outline.
+.t-h3 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-heading);
+  font-weight: var(--fw-display-reg);
+  letter-spacing: normal;
+  color: var(--color-body);
+}
+
 h4 {
   font-size: $font-size-h4;
 }
@@ -183,6 +192,11 @@ a {
     outline: 2px solid var(--color-accent);
     outline-offset: 3px;
   }
+}
+
+// The copper ink of a two-ink Streamline Freehand illustration, so a token change reaches it (DESIGN → Imagery).
+.ink-accent {
+  fill: var(--color-accent);
 }
 
 hr {

@@ -2,51 +2,49 @@
 layout: default
 ---
 
+{% assign live_projects = site.projects | sort: 'order' %}
+{% for project in live_projects %}{% if project.url == page.url %}{% assign here = forloop.index0 %}{% endif %}{% endfor %}
+{% assign next_index = here | plus: 1 %}
+{% if next_index >= live_projects.size %}{% assign next_index = 0 %}{% endif %}
+{% assign next_project = live_projects[next_index] %}
+
 <div class="container">
+  <article class="project-page" aria-labelledby="project-title">
 
-  <div class="project-info">
-    {% if page.subtitle %}
-    <p class="project-info__subtitle">{{ page.subtitle }}</p>
+    <header class="project-info">
+      {% if page.subtitle %}
+      <p class="project-info__type">{{ page.subtitle }}</p>
+      {% endif %}
+      <h1 class="project-info__title" id="project-title">{{ page.title }}</h1>
+    </header>
+
+    {% if page.image %}
+    <div class="project-info-image">
+      <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{ page.image_alt | default: page.title }}">
+    </div>
     {% endif %}
-    <h1 class="project-info__title">{{ page.title }}</h1>
-  </div>
 
-  {% if page.image %}
-  <div class="project-info-image">
-    <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{ page.image_alt | default: page.title }}">
-  </div>
-  {% endif %}
+    {% comment %}Details come first in the source, so below the desktop break the summary and the demo come before the write-up.{% endcomment %}
+    <div class="project-body">
+      {% include sidebar-widgets/widget-project-meta.html %}
 
-  <div class="row">
-    <div class="project-left col col-7 col-d-12">
       <div class="project-content">
         {{ content }}
-        {% if page.previous.url %}
-        <div class="project__nav">
-          <div class="project__prev">
-            <div class="project__box">
-              <span class="project__nav-info">Next project</span>
-              <h2 class="project__nav-title">
-                <a href="{{ page.previous.url | relative_url }}" class="project__nav-link">{{page.previous.title}}</a>
-              </h2>
-            </div>
+        {% if next_project and next_project.url != page.url %}
+        <nav class="card project-next" aria-label="Next project">
+          <div>
+            <span class="card-meta">Next project</span>
+            <h2 class="project-next__title"><a class="project-next__link" href="{{ next_project.url | relative_url }}">{{ next_project.title }}</a></h2>
           </div>
-          <a class="project__nav-image" href="{{ page.previous.url | relative_url }}">
-            <img class="lazy" data-src="{{ page.previous.image | relative_url }}" alt="{{ page.previous.image_alt | default: page.previous.title }}">
-          </a>
-        </div>
+          {% if next_project.image %}
+          <img class="card-image lazy" data-src="{{ site.baseurl }}{{ next_project.image }}" alt="">
+          {% endif %}
+        </nav>
         {% endif %}
       </div>
 
+      {% include sidebar-widgets/widget-recent-projects.html %}
     </div>
 
-    <div class="project-right col col-5 col-d-12">
-      <aside class="sidebar">
-        {% include sidebar-widgets/widget-project-meta.html %}
-        {% include sidebar-widgets/widget-recent-projects.html %}
-      </aside>
-    </div>
-
-  </div>
-
+  </article>
 </div>

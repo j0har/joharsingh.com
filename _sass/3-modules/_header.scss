@@ -46,99 +46,28 @@
 }
 
 /* Nav */
-.main-nav {
+.nav__list {
   display: flex;
   align-items: center;
+  gap: var(--space-4);
 
-  @media (max-width: $desktop) {
-    position: absolute;
-    top: 48px;
-    right: $base-spacing-unit;
-    z-index: -1;
-    display: block;
-    min-width: 160px;
-    padding: 20px 24px;
-    border-radius: 16px;
-    transform: translate3d(0, -12px, 0);
-    opacity: 0;
-    visibility: hidden;
-    background-color: var(--background-color);
-    box-shadow: 0 8px 40px -8px rgba(0, 0, 0, .20);
-    transition: all .2s ease;
+  .nav__item {
+    margin: 0;
+  }
+}
 
-    &.is-visible {
-      z-index: 100;
-      opacity: 1;
-      visibility: visible;
-      transform: translate3d(0, 0, 0);
-    }
+// Standalone links at fs-ui, the same as the footer's; the current page keeps the copper underline (DESIGN → Links).
+.nav__link {
+  display: inline-block;
+  padding: var(--space-1) 0;
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-ui);
 
-    .nav__list {
-      flex-direction: column;
-      width: 100%;
-
-      .nav__item {
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: right;
-
-        &.dropdown {
-          .dropdown-toggle {
-            display: none;
-          }
-        }
-
-        .dropdown-menu {
-          position: relative;
-          left: 0;
-          padding: 0;
-          opacity: 1;
-          visibility: visible;
-          transform: scale(1);
-          min-width: auto;
-          border: none;
-          box-shadow: none;
-
-          .nav__link {
-            display: block;
-            margin-bottom: 0;
-            font-size: 16px;
-
-            &:hover {
-              &::before {
-                opacity: 1;
-                visibility: visible;
-              }
-            }
-
-            &.active-link {
-              &::before {
-                opacity: 1;
-                visibility: visible;
-                background-color: var(--color-accent);
-              }
-            }
-          }
-        }
-
-        .nav__link {
-          position: relative;
-          display: inline-block;
-          padding: 2px 0;
-          font-size: 16px;
-          line-height: 1.6;
-
-          &::before {
-            top: 0;
-          }
-
-          .arrow-down {
-            display: none;
-          }
-        }
-      }
-    }
+  &[aria-current="page"] {
+    color: var(--color-primary);
+    text-decoration-color: var(--color-accent);
   }
 }
 
@@ -150,138 +79,62 @@
   }
 }
 
-.main-nav__box {
-  display: flex;
-  align-items: center;
-
-  @media (max-width: $desktop) {
-    display: block;
-  }
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-
-  .nav__item {
-    display: inline-block;
-    margin-right: 36px;
-    margin-bottom: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    .nav__link {
-      position: relative;
-      padding: 12px 0;
-      font-size: 16px;
-      line-height: 1;
-      font-weight: 700;
-
-      &::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 6px;
-        top: 9px;
-        right: -6px;
-        height: 6px;
-        opacity: 0;
-        visibility: hidden;
-        transition: all .2s;
-        border-radius: 50%;
-        background-color: var(--text-alt-color);
-      }
-
-      &:hover {
-        &::before {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-
-      &.active-link {
-        &::before {
-          opacity: 1;
-          visibility: visible;
-          background-color: var(--color-accent);
-        }
-      }
-
-    }
-
-    &.dropdown {
-      position: relative;
-
-      &:hover {
-        .dropdown-menu {
-          opacity: 1;
-          visibility: visible;
-          transform: translate3d(0,0,0);
-        }
-      }
-
-      .arrow-down {
-        font-size: 12px;
-      }
-
-      .dropdown-toggle {
-        color: var(--link-color);
-        cursor: pointer;
-
-        &::before {
-          content: none;
-        }
-      }
-    }
+// The open menu is a burgundy panel from the header to the foot of the screen: the site's one dark navigation moment (DESIGN → Dark Surfaces).
+@media (max-width: $desktop) {
+  .menu-open {
+    overflow: hidden;
   }
 
-  .dropdown-menu {
+  // The panel spans the viewport while its links keep the logo's left edge: 50% is half the header row's width.
+  .main-nav {
     position: absolute;
-    top: calc(100% + 8px);
-    left: -32px;
-    transform: translate3d(0, -12px, 0);
-    backface-visibility: hidden;
+    top: 100%;
+    left: 50%;
     z-index: 100;
-    min-width: 150px;
-    display: block;
-    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -50vw;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    // The panel starts below the header, so its foot padding outruns the header's height and keeps the last link reachable on a short screen.
+    padding: var(--space-4) calc(50vw - 50% + #{$base-spacing-unit}) var(--space-8);
+    background-color: var(--color-dark-bg);
     opacity: 0;
     visibility: hidden;
-    transition: all .25s ease;
-    border-radius: 16px;
-    box-shadow: 0 8px 40px -8px rgba(0, 0, 0, 0.2);
-    background-color: var(--background-color);
+    transition: opacity var(--dur-hover) var(--ease-standard), visibility var(--dur-hover) var(--ease-standard);
 
-    .nav__link {
-      position: relative;
-      display: inline-block;
-      padding: 0 0 0 12px;
-      font-size: 16px;
-      line-height: 1.6;
+    &.is-visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 
-      &:hover {
-        &::after {
-          opacity: .3;
-        }
-      }
+  .nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+    .nav__item + .nav__item {
+      border-top: 1px solid color-mix(in srgb, var(--color-accent) 18%, transparent);
+    }
+  }
 
-      &.active-link {
-        &::before {
-          opacity: 1;
-          visibility: visible;
-          background-color: var(--color-accent);
-        }
-      }
+  // On burgundy the text stays off-white on hover and on the current page: burgundy text would vanish into the ground.
+  .nav__link {
+    display: block;
+    padding: var(--space-3) 0;
+    font-family: var(--font-display);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-display);
+    line-height: var(--lh-display);
+    letter-spacing: var(--ls-display);
+    color: var(--color-dark-text);
+    text-underline-offset: 6px;
 
-      &::before {
-        top: 0;
-      }
+    &:hover,
+    &[aria-current="page"] {
+      color: var(--color-dark-text);
+      text-decoration-color: var(--color-accent);
     }
   }
 }

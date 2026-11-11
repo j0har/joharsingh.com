@@ -1,13 +1,30 @@
-/* Tags */
-.tags__inner {
-  &.is-hidden {
-    display: none;
+/* Tags page */
+// Every tag shows on one page, so it works without a script; each section's id is the tag's slug, which every chip links to.
+.tags-index {
+  margin-bottom: var(--space-6);
+
+  .tag-list {
+    justify-content: center;
   }
-  
-  .tag-counter {
-    margin-bottom: 4px;
-    font-size: 16px;
-    line-height: 1;
-    font-weight: 600;
-  }
+}
+
+.tag-section {
+  margin-bottom: var(--space-6);
+  scroll-margin-top: var(--space-4);
+}
+
+.tag-section__head {
+  margin-bottom: var(--space-4);
+}
+
+.tag-section__title {
+  margin: 0;
+}
+
+.tag-section__count {
+  margin: var(--space-1) 0 0;
+  font-size: var(--fs-small);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-small);
+  color: var(--color-label);
 }

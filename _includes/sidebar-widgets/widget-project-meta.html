@@ -1,27 +1,22 @@
-<div class="widget-sidebar project-meta">
-  <h2 class="widget-sidebar__title">Project details</h2>
+<aside class="card project-details" aria-labelledby="project-details-title">
+  <h2 class="t-h3 project-details__title" id="project-details-title">Project details</h2>
   {% if page.summary %}
-  <p class="project-meta__summary">{{ page.summary }}</p>
+  <p class="card-text">{{ page.summary }}</p>
   {% endif %}
- {% if page.duration %}
-  <div class="project-meta__item">
-    <h3 class="project-meta__name">Duration</h3>
-    <div class="project-meta__text">{{ page.duration }}</div>
-  </div>
-  {% endif %}
-  {% if page.features %}
-  <div class="project-meta__item">
-    <h3 class="project-meta__name">Features</h3>
-    <div class="project-meta__text">{{ page.features }}</div>
-  </div>
-  {% endif %}
-  {% if page.tools %}
-  <div class="project-meta__item">
-    <h3 class="project-meta__name">Made with</h3>
-    <div class="project-meta__text">{{ page.tools }}</div>
-  </div>
+  {% if page.duration or page.features or page.tools %}
+  <dl class="project-facts">
+    {% if page.duration %}
+    <div><dt>Duration</dt><dd>{{ page.duration }}</dd></div>
+    {% endif %}
+    {% if page.features %}
+    <div><dt>Features</dt><dd>{{ page.features }}</dd></div>
+    {% endif %}
+    {% if page.tools %}
+    <div><dt>Made with</dt><dd>{{ page.tools }}</dd></div>
+    {% endif %}
+  </dl>
   {% endif %}
   {% if page.demo_url %}
-  <a href="{{ page.demo_url }}" class="button button--middle project-meta__cta" target="_blank" rel="noopener">Launch demo</a>
+  <a href="{{ page.demo_url }}" class="button project-details__demo" target="_blank" rel="noopener">Launch demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="screen-reader-text"> (opens in a new tab)</span></a>
   {% endif %}
-</div>
+</aside>

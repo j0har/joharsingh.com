@@ -23,20 +23,11 @@
     margin-bottom: 0;
   }
 
+  // A standalone link in the UI type: the page's one italic accent is the home hero (DESIGN → Pairing Rules).
   .section__link {
-    font-family: $heading-font-family;
-    font-size: 22px;
-    font-weight: 500;
-    font-style: italic;
-    text-decoration: underline;
-    text-decoration-color: var(--heading-font-color);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    line-height: 1.3;
-
-    &:hover {
-      text-decoration-color: transparent;
-    }
+    font-size: var(--fs-ui);
+    font-weight: var(--fw-body-med);
+    line-height: var(--lh-ui);
   }
 
   @media (max-width: $mobile) {
@@ -44,10 +35,6 @@
 
     .section__info {
       margin-bottom: 32px;
-    }
-
-    .section__link {
-      font-size: 20px;
     }
   }
 }

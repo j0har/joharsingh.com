@@ -1,28 +1,24 @@
-<div class="widget-sidebar recent-projects">
-  <h2 class="widget-sidebar__title">Other works</h2>
-  {% assign project-collection = site[page.collection] | sample:4 %}
-  {% assign relatedCount = 0 %}
-  {% for project in project-collection %}
-    {% if project.url != page.url %}
-    <div class="recent-project">
-
+{% if live_projects.size > 1 %}
+<aside class="project-works" aria-labelledby="project-works-title">
+  <h2 class="t-h3 project-works__title" id="project-works-title">Other works</h2>
+  <ul class="project-works__list list-reset">
+    {% assign shown = 0 %}
+    {% for project in live_projects %}
+    {% if project.url != page.url and shown < 3 %}
+    <li class="project-works__item">
       {% if project.image %}
-      <a href="{{ project.url | prepend: site.baseurl }}" class="recent-project__image" aria-hidden="true" tabindex="-1">
-        <img class="lazy" data-src="{{site.baseurl}}{{project.image}}" alt="{{project.title}}">
-      </a>
+      <img class="project-works__image lazy" data-src="{{ site.baseurl }}{{ project.image }}" alt="">
       {% endif %}
-
-      <div class="recent-project__content">
-        <h4 class="recent-project__title">
-          <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
-        </h4>
-        <p class="recent-project__summary">{{ project.summary }}</p>
+      <div>
+        <a class="project-works__link" href="{{ project.url | relative_url }}">{{ project.title }}</a>
+        {% if project.summary %}
+        <p class="project-works__summary">{{ project.summary }}</p>
+        {% endif %}
       </div>
-    </div>
-    {% assign relatedCount = relatedCount | plus: 1 %}
-    {% if relatedCount >= 3 %}
-      {% break %}
+    </li>
+    {% assign shown = shown | plus: 1 %}
     {% endif %}
-    {% endif %}
-  {% endfor %}
-</div>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}

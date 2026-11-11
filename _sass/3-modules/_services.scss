@@ -1,0 +1,76 @@
+/* Services */
+.services-intro {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+
+  @media (max-width: 600px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+// A service card isn't a link, so it has no hover and never moves (DESIGN → Cards → Service cards).
+// Its five slots share rows with the card beside it, so each slot and the receive line's rule line up across a row whatever the copy's length.
+.service-card {
+  @supports (grid-template-rows: subgrid) {
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+
+    .service-receive {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  .card-text {
+    margin: 0 0 var(--space-4);
+  }
+}
+
+.illustration {
+  width: var(--space-5);
+  height: var(--space-5);
+  margin-bottom: var(--space-3);
+  color: var(--color-primary);
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.service-trigger {
+  margin: 0 0 var(--space-3);
+  font-weight: var(--fw-body-med);
+}
+
+// Without subgrid, the receive line drops to the card's foot.
+.service-receive {
+  margin: auto 0 0;
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-label);
+}
+
+.services-cta {
+  margin-top: var(--space-6);
+  text-align: center;
+
+  p {
+    margin-bottom: var(--space-4);
+    color: var(--color-label);
+  }
+}
