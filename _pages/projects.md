@@ -10,7 +10,7 @@ wide: true
 ---
 
 <div class="row">
-  {% assign sorted = site.projects | sort: 'date' | reverse %}
+  {% assign sorted = site.projects | sort: 'order' %}
   {% for project in sorted %}
   {% include project-card.html %}
   {% endfor %}
