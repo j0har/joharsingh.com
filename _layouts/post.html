@@ -9,11 +9,11 @@ layout: default
 
       <div class="post-meta">
         {% if page.tags.size >= 1 %}
-        <div class="post-tags">
+        <ul class="tag-list post-tags" aria-label="Tags">
           {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post__tag">{{ tag }}</a>
+          <li><a class="tag" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a></li>
           {% endfor %}
-        </div>
+        </ul>
         {% endif %}
         <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%d %-B, %Y" %}{{ page.date | date: date_format }}</time> /
         <a href="{{site.baseurl}}/about/" class="post-author">{{site.data.settings.author_name}}</a> /

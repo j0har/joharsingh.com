@@ -1,11 +1,16 @@
 /* Pagination */
 .pagination {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 16px;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
 
-  @media (max-width: $mobile) {
-    margin-top: 0;
-  }
+.pagination__status {
+  margin: 0;
+  font-size: var(--fs-small);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-small);
+  color: var(--color-label);
 }

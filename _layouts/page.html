@@ -27,9 +27,13 @@ layout: default
 <!-- begin page -->
 <div class="{% if page.wide %}container-big{% else %}container{% endif %}">
   <article class="page{% if page.wide %} page--wide{% endif %}">
+    {% if page.wide %}
+    {{ content }}
+    {% else %}
     <div class="page__content">
       {{ content }}
     </div>
+    {% endif %}
   </article>
 </div>
 <!-- end page -->

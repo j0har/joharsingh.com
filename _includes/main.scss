@@ -28,12 +28,11 @@ Whether you're an illustrator, web designer, photographer, or artist, Simpler is
     3.3-Buttons
     3.4-Gallery
     3.5-Hero
-    3.6-Article
+    3.6-Cards
     3.7-Contact
     3.8-Sections
-    3.9-Projects
     3.10-Testimonials
-    3.11-Section Tags
+    3.11-Tag Chips
     3.12-Subscribe
     3.13-Social
     3.14-Footer
@@ -93,17 +92,15 @@ Whether you're an illustrator, web designer, photographer, or artist, Simpler is
 @import '3-modules/gallery';
 /* >>>>>>>>>>>>>> :: 3.5-Hero <<<<<<<<<<<<<<< */
 @import '3-modules/hero';
-/* >>>>>>>>>>>>>> :: 3.6-Article <<<<<<<<<<<<<<< */
-@import '3-modules/article';
+/* >>>>>>>>>>>>>> :: 3.6-Cards <<<<<<<<<<<<<<< */
+@import '3-modules/cards';
 /* >>>>>>>>>>>>>> :: 3.7-Contact <<<<<<<<<<<<<<< */
 @import '3-modules/contact';
 /* >>>>>>>>>>>>>> :: 3.8-Sections <<<<<<<<<<<<<<< */
 @import '3-modules/sections';
-/* >>>>>>>>>>>>>> :: 3.9-Projects <<<<<<<<<<<<<<< */
-@import '3-modules/projects';
 /* >>>>>>>>>>>>>> :: 3.10-Testimonials <<<<<<<<<<<<<<< */
 @import '3-modules/testimonials';
-/* >>>>>>>>>>>>>> :: 3.11-Section Tags <<<<<<<<<<<<<<< */
+/* >>>>>>>>>>>>>> :: 3.11-Tag Chips <<<<<<<<<<<<<<< */
 @import '3-modules/section-tags';
 /* >>>>>>>>>>>>>> :: 3.12-Subscribe <<<<<<<<<<<<<<< */
 @import '3-modules/subscribe';

@@ -31,7 +31,7 @@ menu_settings:
 #-------------------------------
 # Social Settings
 social:
-- {icon: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/joharsingh/"}
+- {icon: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/joharsingh/", label: "LinkedIn"}
 
 
 #-------------------------------
@@ -71,12 +71,14 @@ section_tags_title: Explore topics
 newsletter_settings:
   enable: true
   newsletter_action: "https://app.kit.com/forms/9658065/subscriptions"
-  newsletter_title: "Stay connected."
+  newsletter_title: "Can I See Some ID?"
+  newsletter_description: "A monthly letter on instructional design: featuring useful design tips, practitioner insights, and experiments."
 
 
 #-------------------------------
 # Footer Settings
 footer_description: I design user-friendly learning solutions that build capability and improve performance outcomes.
+footer_tagline: Friendly Neighbourhood Instructional Designer
 
 
 #-------------------------------

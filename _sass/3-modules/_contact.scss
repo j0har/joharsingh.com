@@ -1,64 +1,105 @@
 /* Contact */
 .form-box {
-  margin-bottom: 80px;
+  max-width: var(--max-prose);
+  margin: 0 auto var(--space-7);
 
   @media (max-width: $mobile) {
-    margin-bottom: 60px;
+    margin-bottom: var(--space-6);
   }
 }
 
 .contact-head {
-  margin-bottom: 32px;
+  margin-bottom: var(--space-5);
   text-align: center;
 }
 
-.form__group {
-  margin-bottom: 20px;
+.form {
+  display: grid;
+  gap: var(--space-4);
+}
 
-  &:last-child {
-    margin-bottom: 0;
+.form__group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-2);
+  margin: 0;
+
+  .button {
+    align-self: flex-start;
   }
+}
+
+// Labels stay visible above every field (DESIGN → Form Fields).
+.form__label {
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  color: var(--color-body);
+}
+
+.form__label-note {
+  font-weight: var(--fw-body);
+  color: var(--color-label);
 }
 
 .form__input {
   width: 100%;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  border: 2px solid transparent;
-  border-radius: 12px;
+  padding: 11px 14px;
+  font-family: $base-font-family;
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body);
+  line-height: var(--lh-ui);
+  color: var(--color-body);
+  border: 1px solid var(--color-field-border);
+  border-radius: var(--radius-sm);
   outline: 0;
-  transition: .2s ease-in-out;
-  resize: vertical;
-  color: var(--heading-font-color);
-  background-color: var(--background-alt-color);
+  background-color: var(--color-bg);
+  transition: border-color var(--dur-hover) var(--ease-standard);
 
-  &::placeholder {
-    color: var(--heading-font-color);
+  // Padding drops 1px as the border thickens, so the field doesn't shift.
+  &:focus {
+    padding: 10px 13px;
+    border: 2px solid var(--color-accent);
   }
 
-  &:focus {
-    border-color: var(--color-accent);
-    background-color: transparent;
+  // :user-invalid waits until the visitor has interacted, so an untouched required field shows no error.
+  &:user-invalid {
+    border-color: var(--color-error);
   }
 }
 
-/*
-  Native <select> chrome (especially iOS Safari, Android Chrome) ignores the
-  padding/line-height box model that text inputs already respect, which is
-  why the three dropdowns were rendering at inconsistent heights/widths
-  across devices. Stripping OS-native appearance and drawing a custom caret
-  routes selects through the same box model as inputs so they match exactly.
-*/
+textarea.form__input {
+  min-height: 96px;
+  line-height: var(--lh-body);
+  resize: vertical;
+}
+
+// Native select chrome ignores the padding that text inputs respect, so it's stripped. The chevron sits on .form__select because a select can't hold ::after.
 select.form__input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
-  padding-right: 48px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath fill='none' stroke='%23888' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 12px 8px;
+  padding-right: 40px;
   cursor: pointer;
+
+  &:focus {
+    padding-right: 39px;
+  }
+}
+
+.form__select {
+  position: relative;
+
+  // Borders in currentColor, so forced-colours mode recolours the chevron with the text.
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: translateY(-70%) rotate(45deg);
+    pointer-events: none;
+  }
 }

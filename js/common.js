@@ -7,26 +7,24 @@ document.addEventListener("DOMContentLoaded", function() {
     btnScrollToTop = document.querySelector(".top");
 
 
-  menuToggle.addEventListener("click", () => {
-    menu();
+  menuToggle.addEventListener("click", function () {
+    setMenuOpen(menuToggle.getAttribute("aria-expanded") !== "true");
   });
 
-  function menuOpen() {
-    menuList.classList.add("is-open");
-  }
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+      setMenuOpen(false);
+      menuToggle.focus();
+    }
+  });
 
-  function menuClose() {
-    menuList.classList.remove("is-open");
-  }
-
-
-  // Menu
-  function menu() {
-    menuToggle.classList.toggle("is-open");
-    menuList.classList.toggle("is-visible");
+  function setMenuOpen(open) {
+    menuToggle.setAttribute("aria-expanded", String(open));
+    menuList.classList.toggle("is-visible", open);
   }
 
 
+  // is-in lifts the page-load cover once the first frame has painted.
   setTimeout(function(){
     body.classList.add("is-in");
   },150)
@@ -97,19 +95,63 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 
-  var load_posts_button = document.querySelector('.load-more-posts');
+  var pagination = document.querySelector(".pagination[data-next-page]");
 
-  load_posts_button&&load_posts_button.addEventListener("click",function(e){e.preventDefault();var o=document.querySelector(".pagination"),e=pagination_next_url.split("/page")[0]+"/page/"+pagination_next_page_number+"/";fetch(e).then(function(e){if(e.ok)return e.text()}).then(function(e){var n=document.createElement("div");n.innerHTML=e;for(var t=document.querySelector(".grid"),a=n.querySelectorAll(".grid__post"),i=0;i<a.length;i++)t.appendChild(a.item(i));new LazyLoad({elements_selector:".lazy"});pagination_next_page_number++,pagination_next_page_number>pagination_available_pages_number&&(o.style.display="none")})});
+  if (pagination) {
+    var loadMoreButton = pagination.querySelector(".load-more-posts"),
+      paginationStatus = pagination.querySelector(".pagination__status"),
+      postGrid = document.querySelector(".grid"),
+      nextPage = Number(pagination.dataset.nextPage),
+      totalPages = Number(pagination.dataset.totalPages),
+      totalPosts = Number(pagination.dataset.totalPosts),
+      loading = false;
 
+    // Disabling a focused button drops keyboard focus, so a flag blocks repeat clicks while the page loads.
+    loadMoreButton.addEventListener("click", function () {
+      if (loading) return;
+      loading = true;
+
+      fetch(pagination.dataset.pageUrl.replace(":num", nextPage))
+        .then(function (response) {
+          if (!response.ok) throw new Error(response.status);
+          return response.text();
+        })
+        .then(function (html) {
+          var nextPageDocument = new DOMParser().parseFromString(html, "text/html"),
+            newPosts = Array.prototype.slice.call(nextPageDocument.querySelectorAll(".grid__post"));
+
+          newPosts.forEach(function (post) {
+            postGrid.appendChild(document.adoptNode(post));
+          });
+          new LazyLoad({ elements_selector: ".lazy" });
+          nextPage++;
+
+          if (nextPage > totalPages) {
+            loadMoreButton.remove();
+            paginationStatus.textContent = "Showing all " + totalPosts + " posts";
+          } else {
+            paginationStatus.textContent = "Showing " + postGrid.querySelectorAll(".grid__post").length + " of " + totalPosts + " posts";
+          }
+
+          // Keyboard users land on what arrived.
+          if (newPosts.length) newPosts[0].querySelector(".card-link").focus();
+        })
+        .finally(function () {
+          loading = false;
+        });
+    });
+  }
+
+
+  var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   btnScrollToTop.addEventListener("click", function () {
-    if (window.scrollY != 0) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-      })
-    }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: reducedMotion.matches ? "auto" : "smooth"
+    });
+    document.querySelector(".logo__link").focus({ preventScroll: true });
   });
 
 });

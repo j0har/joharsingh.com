@@ -34,9 +34,15 @@
   transition: color .25s ease;
 }
 
+// logo.svg is outlined at 100 units per em, so its height is 0.903 of the logo size: 36px for the 40px nav logo, 29px for 32px (DESIGN → Logo Mark).
 .logo__image {
-  max-height: 50px;
+  display: block;
   width: auto;
+  height: 36px;
+
+  @media (max-width: 600px) {
+    height: 29px;
+  }
 }
 
 /* Nav */
@@ -286,51 +292,65 @@
   }
 }
 
-/* Humburger Menu */
+/* Menu toggle */
+// The mobile menu toggle's hit area is 44×44px (DESIGN → Accessibility). The bars are borders in currentColor, so they survive forced-colours mode.
 .hamburger {
-  width: 28px;
-  height: 28px;
   display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--color-body);
   cursor: pointer;
 
   @media (max-width: $desktop) {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
   }
 }
 
-.hamburger div,
-.hamburger div:after,
-.hamburger div:before {
-  width: 28px;
-  height: 4px;
-  border-radius: 10px;
-  transition: all 0.15s linear;
-  background-color: var(--heading-font-color);
+.hamburger__bars {
+  position: relative;
+  width: 22px;
+  height: 14px;
+
+  span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    border-top: 1.5px solid currentColor;
+    transform: translateY(-50%);
+    transition: transform var(--dur-hover) var(--ease-standard), opacity var(--dur-hover) var(--ease-standard);
+
+    &:nth-child(1) {
+      transform: translateY(calc(-50% - 6px));
+    }
+
+    &:nth-child(3) {
+      transform: translateY(calc(-50% + 6px));
+    }
+  }
 }
 
-.hamburger div:before,
-.hamburger div:after {
-  content: "";
-  position: absolute;
-}
+.hamburger[aria-expanded="true"] .hamburger__bars span {
+  &:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+  }
 
-.hamburger div:before {
-  transform: translateY(-200%);
-}
+  &:nth-child(2) {
+    opacity: 0;
+  }
 
-.hamburger div:after {
-  transform: translateY(200%);
-}
-
-.hamburger.is-open div {
-  background: transparent;
-}
-
-.hamburger.is-open div:before {
-  transform: rotate(45deg);
-}
-
-.hamburger.is-open div:after {
-  transform: rotate(-45deg);
+  &:nth-child(3) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }

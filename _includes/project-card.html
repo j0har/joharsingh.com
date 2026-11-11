@@ -1,0 +1,15 @@
+<article class="project col col-4 col-w-6 col-t-12">
+  <div class="card">
+    {% if project.image %}
+    <img class="card-image lazy" data-src="{{ site.baseurl }}{{ project.image }}" alt="{{ project.image_alt }}">
+    {% endif %}
+    {% if project.subtitle %}
+    <span class="card-meta">{{ project.subtitle }}</span>
+    {% endif %}
+    <h3 class="card-title">{{ project.title }}</h3>
+    {% if project.summary %}
+    <p class="card-text">{{ project.summary }}</p>
+    {% endif %}
+    <a class="card-link" href="{{ site.baseurl }}{{ project.url }}">View project<span class="screen-reader-text">: {{ project.title }}</span> <span aria-hidden="true">→</span></a>
+  </div>
+</article>

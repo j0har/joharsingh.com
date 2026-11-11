@@ -1,146 +1,84 @@
 /* Subscribe */
+// The burgundy band is the site's one dark ground (DESIGN → Dark Surfaces).
 .subscribe {
-  position: relative;
-  padding: 100px 0;
-  overflow: hidden;
-  background: var(--color-primary);
+  padding: var(--space-7) 0;
+  color: var(--color-dark-text);
+  background: var(--color-dark-bg);
 
-  @media (max-width: $tablet) {
-    padding: 80px 0;
-  }
-
-  @media (max-width: $mobile) {
-    padding: 60px 0;
-  }
-}
-
-.subscribe__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .4);
+  @media (max-width: 600px) {
+    padding: var(--space-6) 0;
   }
 }
 
 .subscribe__inner {
-  position: relative;
-  z-index: 1;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
+  gap: var(--space-5);
+}
+
+.subscribe__head {
+  flex: 1 1 320px;
+}
+
+.subscribe__title {
+  margin: 0;
+  color: var(--color-dark-text);
+}
+
+.subscribe__intro {
+  max-width: var(--max-prose);
+  margin: var(--space-3) 0 0;
+  color: var(--color-dark-text);
+}
+
+.subscribe-form {
+  display: flex;
+  flex: 1 1 320px;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-width: 480px;
+}
+
+.subscribe-form__label {
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  color: var(--color-dark-text);
+}
+
+// Field and button take one height from the row's default stretch, so the row sets no align-items.
+.subscribe-form__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.subscribe-email {
+  flex: 1 1 160px;
+  min-width: 0;
+  padding: 11px 14px;
+  font-size: var(--fs-ui);
+  line-height: var(--lh-ui);
+  color: var(--color-body);
+  border: 1px solid var(--color-field-border);
+  border-radius: var(--radius-sm);
+  outline: 0;
+  background: var(--color-bg);
+  transition: border-color var(--dur-hover) var(--ease-standard);
+
+  // Padding drops 1px as the border thickens, so the field doesn't shift.
+  &:focus {
+    padding: 10px 13px;
+    border: 2px solid var(--color-accent);
+  }
+}
+
+.subscribe-button {
+  display: inline-flex;
+  flex: 0 0 auto;
   align-items: center;
-
-  .subscribe__content {
-    margin-right: auto;
-  }
-
-  .subscribe__title {
-    margin-bottom: 0;
-    font-size: 48px;
-    font-weight: var(--fw-display);
-    color: var(--white);
-  }
-
-  .subscribe-form {
-    position: relative;
-    display: inline-flex;
-    width: 100%;
-    max-width: 480px;
-    border-radius: 60px;
-    background: var(--background-color);
-
-    .subscribe-email {
-      flex: 1;
-      height: 60px;
-      padding: 22px 60px 22px 22px;
-      font-size: 16px;
-      line-height: 1;
-      color: var(--heading-font-color);
-      border: none;
-      border-radius: 60px;
-      outline: 0;
-      background: transparent;
-      transition: all .25s ease;
-
-      &:focus {
-        box-shadow: 0 0 0 1px transparent, 0 0 0 1.5px var(--color-accent);
-      }
-
-      &::placeholder {
-        color: var(--text-alt-color);
-      }
-    }
-
-    .subscribe-button {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      width: 50px;
-      height: 50px;
-      font-size: 0;
-      border-radius: 50%;
-      border: none;
-      outline: none;
-      color: var(--button-color);
-      background: var(--button-background-color);
-      transition: all .2s;
-      cursor: pointer;
-
-      &:focus-visible {
-        outline: 2px solid var(--color-accent);
-        outline-offset: 2px;
-      }
-
-      i {
-        font-size: 15px;
-      }
-
-      &:hover {
-        color: var(--button-color-hover);
-        background: var(--button-background-hover);
-      }
-    }
-  }
-
-  @media (max-width: $wide) {
-    .subscribe__title {
-      font-size: 36px;
-    }
-
-    .subscribe-form {
-      max-width: 460px;
-    }
-  }
-
-  @media (max-width: $desktop) {
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-
-    .subscribe__title {
-      margin-bottom: 20px;
-    }
-
-    .subscribe-form {
-      max-width: 100%;
-    }
-  }
-
-  @media (max-width: $mobile) {
-    .subscribe__title {
-      margin-bottom: 16px;
-      font-size: 26px;
-    }
-  }
+  justify-content: center;
+  gap: var(--space-2);
 }

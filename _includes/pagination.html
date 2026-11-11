@@ -1,18 +1,10 @@
-{% assign postCount = site.posts | size %}
-{% assign postsCovered = site.paginate | plus:offset %}
-{% if postsCovered < postCount %}
+{% if paginator.total_pages > 1 %}
 <!-- begin pagination -->
 <div class="container">
-  <div class="pagination animate">
-    <button class="load-more-posts button">Load more posts</button>
+  <div class="pagination" data-next-page="{{ paginator.next_page }}" data-total-pages="{{ paginator.total_pages }}" data-total-posts="{{ paginator.total_posts }}" data-page-url="{{ site.baseurl }}{{ site.paginate_path }}/">
+    <p class="pagination__status" role="status">Showing {{ paginator.posts | size }} of {{ paginator.total_posts }} posts</p>
+    <button class="load-more-posts button button--secondary" type="button">Load more posts</button>
   </div>
 </div>
 <!-- end pagination -->
 {% endif %}
-
-<script>
-  var base_url = "",
-    pagination_next_url = base_url + '/page2',
-    pagination_next_page_number = '{{ paginator.next_page }}',
-    pagination_available_pages_number = '{{ paginator.total_pages }}';
-</script>

@@ -1,0 +1,90 @@
+/* Cards */
+// Portfolio and blog cards share one pattern (DESIGN → Cards).
+.project,
+.article {
+  margin-bottom: var(--space-5);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-secondary);
+}
+
+// A card that is one link lifts, on pointers that hover and while its link has keyboard focus; never under reduced motion (DESIGN → Motion → Card lift).
+@media (prefers-reduced-motion: no-preference) {
+  .card:has(.card-link) {
+    transition: transform var(--dur-hover) var(--ease-standard);
+  }
+
+  .card:has(.card-link:focus-visible) {
+    transform: translateY(calc(var(--space-1) * -1));
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card:has(.card-link):hover {
+    transform: translateY(calc(var(--space-1) * -1));
+  }
+}
+
+.card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-bottom: var(--space-3);
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-border);
+}
+
+.card-meta {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-small);
+  color: var(--color-label);
+}
+
+.card-title {
+  margin: 0 0 var(--space-2);
+  text-wrap: balance;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.card-date {
+  margin: 0;
+  font-size: var(--fs-small);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--ls-small);
+  color: var(--color-label);
+}
+
+// The card's one copper mark: an underline at rest, 3.1:1 on warm sand as a non-text mark. The link sits at the card's foot, so cards in a row end on one line.
+.card-link {
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: var(--space-3);
+  font-size: var(--fs-ui);
+  font-weight: var(--fw-body-med);
+  line-height: var(--lh-ui);
+  text-decoration-color: var(--color-accent);
+  text-decoration-thickness: 2px;
+
+  // The hit area covers the whole card; the link stays the card's only tab stop.
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-md);
+  }
+}

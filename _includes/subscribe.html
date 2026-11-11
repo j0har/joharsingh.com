@@ -1,27 +1,28 @@
-{% if site.data.settings.newsletter_settings.enable == true %}
+{% assign newsletter = site.data.settings.newsletter_settings %}
+{% if newsletter.enable == true %}
 <!-- begin subscribe -->
-<div class="subscribe animate">
+<section class="subscribe animate" aria-labelledby="subscribe-title">
   <div class="container">
     <div class="row">
       <div class="col col-12">
         <div class="subscribe__inner">
-          <div class="subscribe__content">
-          {% if site.data.settings.newsletter_settings.newsletter_title %}
-            <h3 class="subscribe__title">{{ site.data.settings.newsletter_settings.newsletter_title }}</h3>
-          {% endif %}
+          <div class="subscribe__head">
+            <h2 class="subscribe__title" id="subscribe-title">{{ newsletter.newsletter_title }}</h2>
+            {% if newsletter.newsletter_description %}
+            <p class="subscribe__intro">{{ newsletter.newsletter_description }}</p>
+            {% endif %}
           </div>
-          <form class="subscribe-form validate" action="{% if site.data.settings.newsletter_settings.newsletter_action %}{{site.data.settings.newsletter_settings.newsletter_action}}{% else %}#{% endif %}" method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
-            <label class="screen-reader-text" for="form-subscribe-email">Email address</label>
-            <input class="subscribe-email required email" id="form-subscribe-email" type="email" name="email_address" placeholder="Email address" required>
-            <button class="subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+          <form class="subscribe-form" action="{% if newsletter.newsletter_action %}{{ newsletter.newsletter_action }}{% else %}#{% endif %}" method="POST" id="membedded-subscribe-form" name="membedded-subscribe-form" target="_blank" novalidate>
+            <label class="subscribe-form__label" for="form-subscribe-email">Email address</label>
+            <div class="subscribe-form__row">
+              <input class="subscribe-email" id="form-subscribe-email" type="email" name="email_address" autocomplete="email" required>
+              <button class="button button--inverse subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Subscribe <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-  {% if site.data.settings.newsletter_settings.newsletter_background_image %}
-    <div class="subscribe__bg lazy" data-bg="{{site.data.settings.newsletter_settings.newsletter_background_image}}"></div>
-  {% endif %}
-</div>
+</section>
 <!-- end subscribe -->
 {% endif %}
