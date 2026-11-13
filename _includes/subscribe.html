@@ -7,7 +7,7 @@
       <div class="col col-12">
         <div class="subscribe__inner">
           <div class="subscribe__head">
-            <h2 class="subscribe__title" id="subscribe-title">{{ newsletter.newsletter_title }}</h2>
+            <h2 class="subscribe__title" id="subscribe-title">Subscribe to <cite class="subscribe__name">{{ newsletter.newsletter_title }}</cite></h2>
             {% if newsletter.newsletter_description %}
             <p class="subscribe__intro">{{ newsletter.newsletter_description }}</p>
             {% endif %}
@@ -16,7 +16,7 @@
             <label class="subscribe-form__label" for="form-subscribe-email">Email address</label>
             <div class="subscribe-form__row">
               <input class="subscribe-email" id="form-subscribe-email" type="email" name="email_address" autocomplete="email" required>
-              <button class="button button--inverse subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Subscribe <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+              <button class="button button--inverse subscribe-button" id="membedded-subscribe" type="submit" name="subscribe">Sign me up <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
             </div>
           </form>
         </div>

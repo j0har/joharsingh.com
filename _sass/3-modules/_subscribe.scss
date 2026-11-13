@@ -27,6 +27,13 @@
   color: var(--color-dark-text);
 }
 
+.subscribe__name {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: var(--fw-display-reg);
+  color: var(--color-accent-on-dark);
+}
+
 .subscribe__intro {
   max-width: var(--max-prose);
   margin: var(--space-3) 0 0;
