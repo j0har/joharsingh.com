@@ -40,6 +40,11 @@
   width: auto;
   height: 44px;
 
+  // 32px where the header is a fixed 1000px and the centred nav would crowd it (DESIGN → Logo Mark → Size Variants).
+  @media (min-width: #{$desktop + 1}) and (max-width: $wide) {
+    height: 35px;
+  }
+
   @media (max-width: 600px) {
     height: 35px;
   }
@@ -56,11 +61,11 @@
   }
 }
 
-// Standalone links at fs-ui, the same as the footer's; the current page keeps the copper underline (DESIGN → Links).
+// One step above the UI size, so the nav holds its own beside the logo; the current page keeps the copper underline (DESIGN → Links).
 .nav__link {
   display: inline-block;
   padding: var(--space-1) 0;
-  font-size: var(--fs-ui);
+  font-size: var(--fs-nav);
   font-weight: var(--fw-body-med);
   line-height: var(--lh-ui);
   letter-spacing: var(--ls-ui);
