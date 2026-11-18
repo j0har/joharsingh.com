@@ -42,14 +42,12 @@ layout: default
               <a class="card-link" href="{{ next_project.url | relative_url }}">View project<span class="screen-reader-text">: {{ next_project.title }}</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
             </div>
             {% if next_project.image %}
-            <img class="card-image lazy project-next__image" data-src="{{ site.baseurl }}{{ next_project.image }}" alt="">
+            <img class="card-image lazy" data-src="{{ site.baseurl }}{{ next_project.image }}" alt="">
             {% endif %}
           </div>
         </nav>
         {% endif %}
       </div>
-
-      {% include sidebar-widgets/widget-recent-projects.html %}
     </div>
 
   </article>

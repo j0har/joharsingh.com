@@ -46,12 +46,11 @@
   }
 }
 
-// Write-up left, details and other works right; one column below the desktop break, in source order: details, write-up, other works.
+// Write-up left, details right; one column below the desktop break, details first.
 .project-body {
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "content details" "content works";
+  grid-template-areas: "content details";
   column-gap: var(--space-6);
   row-gap: var(--space-5);
   align-items: start;
@@ -59,13 +58,14 @@
 
   @media (max-width: $desktop) {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: none;
-    grid-template-areas: "details" "content" "works";
+    grid-template-areas: "details" "content";
   }
 }
 
+// A .card fills its grid area; the details box keeps its own height beside a long write-up.
 .project-details {
   grid-area: details;
+  height: auto;
 
   .project-details__title {
     margin: 0 0 var(--space-3);
@@ -150,49 +150,4 @@
   display: flex;
   flex-direction: column;
   min-width: 0;
-}
-
-/* Other works */
-.project-works {
-  grid-area: works;
-
-  .project-works__title {
-    margin: 0 0 var(--space-3);
-  }
-}
-
-.project-works__list {
-  display: grid;
-  gap: var(--space-4);
-}
-
-.project-works__item {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-3);
-  margin: 0;
-}
-
-.project-works__image {
-  flex: 0 0 var(--space-7);
-  width: var(--space-7);
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  background-color: var(--color-bg-secondary);
-}
-
-.project-works__link {
-  display: inline-block;
-  min-height: 24px;
-  font-size: var(--fs-ui);
-  font-weight: var(--fw-body-med);
-  line-height: var(--lh-ui);
-}
-
-.project-works__summary {
-  margin: var(--space-1) 0 0;
-  font-size: var(--fs-small);
-  line-height: var(--lh-ui);
-  color: var(--color-label);
 }
