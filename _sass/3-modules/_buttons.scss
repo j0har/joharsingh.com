@@ -53,6 +53,12 @@
     }
   }
 
+  // One size and spacing for every button's icon. The markup puts no word space before the icon, so this margin is the whole gap.
+  .fa-solid {
+    margin-left: var(--space-2);
+    font-size: 0.85em;
+  }
+
   &--middle {
     padding: 10px 32px;
   }

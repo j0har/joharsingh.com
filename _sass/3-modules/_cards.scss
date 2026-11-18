@@ -79,6 +79,8 @@
   line-height: var(--lh-ui);
   text-decoration-color: var(--color-accent);
   text-decoration-thickness: 2px;
+  // Low enough to clear descenders, so the 2px line runs unbroken under "project" and "post".
+  text-underline-offset: 5px;
 
   // The hit area covers the whole card; the link stays the card's only tab stop.
   &::after {
