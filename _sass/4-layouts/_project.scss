@@ -119,37 +119,37 @@
 }
 
 /* Next project */
+// The write-up's closing card, built from the portfolio card's parts (DESIGN → Project Page). Below 600px the image moves above the text, as on a portfolio card.
 .project-next {
+  margin-top: var(--space-6);
+}
+
+.project-next__card {
   display: grid;
   grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: var(--space-4);
-  align-items: center;
-  margin-top: var(--space-6);
-
-  .project-next__title {
-    margin: 0;
-  }
+  align-items: stretch;
 
   .card-image {
+    align-self: center;
     margin: 0;
   }
 
   @media (max-width: 600px) {
     grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-3);
+
+    .card-image {
+      order: -1;
+    }
   }
 }
 
-// The block's one link: a 2px copper underline at rest, as on a card link (DESIGN → Cards).
-.project-content .project-next__link {
-  color: var(--color-link);
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
-  overflow-wrap: normal;
-
-  &:hover {
-    color: var(--color-link-hover);
-  }
+// A column, so the card link's `margin-top: auto` sets it at the card's foot, as on a portfolio card.
+.project-next__text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 /* Other works */

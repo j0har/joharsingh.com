@@ -9,6 +9,6 @@
     <h3 class="card-title">{{ post.title }}</h3>
     {% assign date_format = site.minima.date_format | default: "%d %-b, %Y" %}{% assign words = post.content | number_of_words %}
     <p class="card-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time> · {% if words < 360 %}1{% else %}{{ words | divided_by: 180 }}{% endif %} min read</p>
-    <a class="card-link" href="{{ post.url | relative_url }}">Read post<span class="screen-reader-text">: {{ post.title }}</span> <span aria-hidden="true">→</span></a>
+    <a class="card-link" href="{{ post.url | relative_url }}">Read post<span class="screen-reader-text">: {{ post.title }}</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
   </div>
 </article>

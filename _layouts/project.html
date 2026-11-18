@@ -31,14 +31,20 @@ layout: default
       <div class="project-content">
         {{ content }}
         {% if next_project and next_project.url != page.url %}
-        <nav class="card project-next" aria-label="Next project">
-          <div>
-            <span class="card-meta">Next project</span>
-            <h2 class="project-next__title"><a class="project-next__link" href="{{ next_project.url | relative_url }}">{{ next_project.title }}</a></h2>
+        <nav class="project-next" aria-label="Next project">
+          <div class="card project-next__card">
+            <div class="project-next__text">
+              <span class="card-meta">Next project{% if next_project.subtitle %} · {{ next_project.subtitle }}{% endif %}</span>
+              <h2 class="card-title t-h3">{{ next_project.title }}</h2>
+              {% if next_project.summary %}
+              <p class="card-text">{{ next_project.summary }}</p>
+              {% endif %}
+              <a class="card-link" href="{{ next_project.url | relative_url }}">View project<span class="screen-reader-text">: {{ next_project.title }}</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            {% if next_project.image %}
+            <img class="card-image lazy project-next__image" data-src="{{ site.baseurl }}{{ next_project.image }}" alt="">
+            {% endif %}
           </div>
-          {% if next_project.image %}
-          <img class="card-image lazy" data-src="{{ site.baseurl }}{{ next_project.image }}" alt="">
-          {% endif %}
         </nav>
         {% endif %}
       </div>

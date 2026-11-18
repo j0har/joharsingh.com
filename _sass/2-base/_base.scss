@@ -194,6 +194,13 @@ a {
   }
 }
 
+// A link's trailing arrow sits outside its underline: an inline-block takes no text decoration from its parent (DESIGN → Links).
+.card-link .fa-arrow-right,
+.section__link .fa-arrow-right {
+  display: inline-block;
+  margin-left: var(--space-1);
+}
+
 // The copper ink of a two-ink Streamline Freehand illustration, so a token change reaches it (DESIGN → Imagery).
 .ink-accent {
   fill: var(--color-accent);

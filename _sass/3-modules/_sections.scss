@@ -29,11 +29,6 @@
     font-weight: var(--fw-body-med);
     line-height: var(--lh-ui);
     text-decoration-color: var(--color-accent);
-
-    i {
-      display: inline-block;
-      margin-left: var(--space-1);
-    }
   }
 
   @media (max-width: $mobile) {
